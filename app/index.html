@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="app" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lonnie Smith</title>
+
+  <!-- build:css ./assets/compiled/portfolio.min.css -->
+  <link rel="stylesheet" href="_compiled/layout/foundation.css" />
+  <link rel="stylesheet" href="_compiled/layout/main.css" />
+  <link rel="stylesheet" href="_compiled/front-page/front-page.css" />
+  <link rel="stylesheet" href="_compiled/menu/menu.css" />
+  <link rel="stylesheet" href="_compiled/portfolio/portfolio.css" />
+  <link rel="stylesheet" href="_compiled/project-detail/project-detail.css" />
+  <link rel="stylesheet" href="_compiled/resume/resume.css" />
+  <link rel="stylesheet" href="_compiled/role-detail/role-detail.css" />
+
+  <!-- /build -->
+
+</head>
+<body>
+
+<ng-include src="'menu/menu.html'"></ng-include>
+<ng-view></ng-view>
+
+<!-- build:js ./assets/compiled/portfolio.min.js -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="_compiled/app-module.js"></script>
+<script src="_compiled/app-config.js"></script>
+<script src="_compiled/front-page/front-page-ctrl.js"></script>
+<script src="_compiled/menu/menu-ctrl.js"></script>
+<script src="_compiled/portfolio/portfolio-ctrl.js"></script>
+<script src="_compiled/project-detail/project-detail-ctrl.js"></script>
+<script src="_compiled/resume/resume-ctrl.js"></script>
+<script src="_compiled/role-detail/role-detail-ctrl.js"></script>
+<script src="_compiled/services/data-loader.js"></script>
+<script src="_compiled/services/project-store.js"></script>
+<script src="_compiled/services/project.js"></script>
+<script src="_compiled/services/role-store.js"></script>
+<script src="_compiled/services/role.js"></script>
+
+<!-- /build -->
+
+
+</body>
+</html>
