@@ -2,7 +2,6 @@
 
 #menu
   font-family: 'Raleway'
-  font-weight: 600
   font-size: 0.85rem
   text-transform: uppercase
   letter-spacing: 0.1rem
@@ -16,26 +15,31 @@
 @media (max-width: $hamburger-break-point)
   #menu
     left: 0
-    // padding: 0.5rem
     width: 100%
+    font-weight: 600
     #menu-toggle
       display: block
       padding: 0.5rem
-      background-color: yellow
+      background-color: rgba($blue, 0.75)
+      color: $orange
       img
         display: inline-block
         height: 1rem
         margin-right: 0.25rem
-        // vertical-align: middle
       .menu-label
-        // line-height: 33px
     ul
       display: none
-      background-color: yellow
+      background-color: rgba($blue, 0.75)
+      color: $white
       li
         padding: 0.75rem 2.1rem
         a.menu-active
-          border-bottom: 0.15rem solid black
+          border-bottom: 0.15rem solid $white
+      li:hover
+        color: $blue
+        background-color: rgba($white, 0.75)
+        a.menu-active
+          border-color: $blue
     ul.menu-open
       display: inline-block
 
@@ -47,14 +51,20 @@
     left: 50%
     transform: translateX(-50%)
     padding: 1rem 0.5rem
+    font-weight: 400
+    background-color: rgba($blue, 0.75)
     #menu-toggle
       display: none
     ul
-      background-color: yellow
+      color: darken($orange, 10%)
       display: flex
       flex-direction: row
       justify-content: space-between
     li
       display: inline-block
       a.menu-active
-        border-bottom: 0.15rem solid black
+        color: lighten($orange, 10%)
+        border-bottom: 0.1rem solid lighten($orange, 10%)
+    li:hover
+      color: lighten($orange, 10%)
+      font-weight: 700
