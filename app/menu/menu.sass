@@ -1,0 +1,60 @@
+@import '../layout/shared-variables'
+
+#menu
+  font-family: 'Raleway'
+  font-weight: 600
+  font-size: 0.85rem
+  text-transform: uppercase
+  letter-spacing: 0.1rem
+  position: fixed
+  top: 0
+  z-index: 100
+  ul
+    list-style-type: none
+
+// skinny layout
+@media (max-width: $hamburger-break-point)
+  #menu
+    left: 0
+    // padding: 0.5rem
+    width: 100%
+    #menu-toggle
+      display: block
+      padding: 0.5rem
+      background-color: yellow
+      img
+        display: inline-block
+        height: 1rem
+        margin-right: 0.25rem
+        // vertical-align: middle
+      .menu-label
+        // line-height: 33px
+    ul
+      display: none
+      background-color: yellow
+      li
+        padding: 0.75rem 2.1rem
+        a.menu-active
+          border-bottom: 0.15rem solid black
+    ul.menu-open
+      display: inline-block
+
+// normal layout
+@media (min-width: $hamburger-break-point)
+  #menu
+    width: 100%
+    max-width: $max-width
+    left: 50%
+    transform: translateX(-50%)
+    padding: 1rem 0.5rem
+    #menu-toggle
+      display: none
+    ul
+      background-color: yellow
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+    li
+      display: inline-block
+      a.menu-active
+        border-bottom: 0.15rem solid black

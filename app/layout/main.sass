@@ -1,5 +1,25 @@
+@import '../layout/shared-variables'
+
 html
   font-size: 18px
+  height: 100%
+  width: 100%
 
 body
   font-family: "Libre Baskerville"
+
+// skinny layout
+@media (max-width: $hamburger-break-point)
+  #app-container
+    width: 100%
+    margin-top: 2.2rem
+    padding: 1rem
+
+// normal layout
+@media (min-width: $hamburger-break-point)
+  #app-container
+    width: 100%
+    max-width: 900px
+    margin: 2.2rem auto 0 auto
+    padding: 1rem 0.5rem
+

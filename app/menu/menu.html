@@ -1,8 +1,12 @@
 <nav id="menu">
-  <ul>
-    <li><a href="#/">About Me</a></li>
-    <li><a href="#/portfolio">Portfolio</a></li>
-    <li><a href="#/resume">Resume</a></li>
-    <li><a href="#/contact">Contact</a></li>
+  <a id="menu-toggle" ng-click="ctrl.toggleMenu()">
+    <img src="img/icon-menu.svg" />
+    <span class="menu-label">{{ctrl.currentLinkText}}</span>
+  </a>
+  <ul ng-class="{'menu-open': ctrl.menuOpen}">
+    <li><a id="menu-about" href="#/" ng-class="{'menu-active': ctrl.activeLinks.about}">{{ctrl.pageTextMap.about}}</a></li>
+    <li><a id="menu-portfolio" href="#/portfolio" ng-class="{'menu-active': ctrl.activeLinks.portfolio}">{{ctrl.pageTextMap.portfolio}}</a></li>
+    <li><a id="menu-resume" href="#/resume" ng-class="{'menu-active': ctrl.activeLinks.resume}">{{ctrl.pageTextMap.resume}}</a></li>
+    <li><a id="menu-contact" href="#/contact" ng-class="{'menu-active': ctrl.activeLinks.contact}">{{ctrl.pageTextMap.contact}}</a></li>
   </ul>
 </nav>

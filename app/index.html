@@ -21,8 +21,10 @@
 </head>
 <body>
 
-<ng-include src="'menu/menu.html'"></ng-include>
-<ng-view></ng-view>
+<div id="app-container">
+  <ng-include src="'menu/menu.html'" ng-controller="MenuCtrl as ctrl"></ng-include>
+  <ng-view></ng-view>
+</div>
 
 <!-- build:js ./assets/compiled/portfolio.min.js -->
 <script src="../bower_components/angular/angular.js"></script>
