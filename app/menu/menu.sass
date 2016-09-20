@@ -20,16 +20,17 @@
     #menu-toggle
       display: block
       padding: 0.5rem
-      background-color: rgba($blue, 0.75)
+      background-color: rgba($blue, 0.85)
       color: $orange
-      img
+      #menu-icon
         display: inline-block
         height: 1rem
         margin-right: 0.25rem
-      .menu-label
+        #hamburger-lines
+          fill: $orange
     ul
       display: none
-      background-color: rgba($blue, 0.75)
+      background-color: rgba($blue, 0.85)
       color: $white
       li
         padding: 0.75rem 2.1rem
@@ -37,7 +38,7 @@
           border-bottom: 0.15rem solid $white
       li:hover
         color: $blue
-        background-color: rgba($white, 0.75)
+        background-color: rgba($white, 0.85)
         a.menu-active
           border-color: $blue
     ul.menu-open
@@ -52,7 +53,7 @@
     transform: translateX(-50%)
     padding: 1rem 0.5rem
     font-weight: 400
-    background-color: rgba($blue, 0.75)
+    background-color: rgba($blue, 0.85)
     #menu-toggle
       display: none
     ul
