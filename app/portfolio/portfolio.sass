@@ -1,1 +1,43 @@
 @import '../layout/shared-variables'
+
+#portfolio
+  width: 100%
+  padding-top: 1rem
+  h1
+    max-width: $max-width
+    margin: 0 auto
+    font-family: 'Raleway'
+    text-transform: uppercase
+    font-size: 2rem
+    letter-spacing: 5px
+    text-align: center
+    font-weight: 400
+  #portfolio-ctrls
+    width: 100%
+    text-align: center
+    font-family: 'Raleway'
+    font-weight: 400
+    padding: 1rem 0
+    font-size: 1.1rem
+    span:first-of-type
+      margin-right: 2rem
+    button
+      padding: 0
+      text-transform: uppercase
+      border-bottom: 0.1em solid $dark-gray
+    button.active
+      border-bottom: 0.2em solid $dark-gray
+      font-weight: 700
+
+  .portfolio-main-item
+    width: 100%
+    padding: 2rem 0
+    .portfolio-main-item-content-wrapper
+      width: 100%
+      max-width: $max-width
+      margin: 0 auto
+    .portfolio-main-thumb
+      height: 15rem
+  // .portfolio-main-item:nth-child(even)
+  //   background-color: darken($white, 8%)
+  //   color: #000

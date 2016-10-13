@@ -1,1 +1,25 @@
-PORTFOLIO
+<section class="page-container" id="portfolio">
+  <h1>Selected work</h1>
+  <div id="portfolio-ctrls">
+    <span>by <button id="btn-projects" ng-class="{active: ctrl.sortMode == 'project'}" ng-click="ctrl.chgSort('project')">Project</button></span>
+    <span>by <button id="btn-roles" ng-class="{active: ctrl.sortMode == 'role'}" ng-click="ctrl.chgSort('role')">Role</button></span>
+  </div>
+
+  <section class="project-list" ng-show="ctrl.sortMode == 'project'">
+    <div class="portfolio-main-item" ng-repeat="project in ctrl.projects">
+      <div class="portfolio-main-item-content-wrapper">
+        <h2>{{project.title}}</h2>
+        <img class="portfolio-main-thumb" ng-show="project.thumbnail" ng-src="{{project.thumbnail}}" />
+        <div class="portfolio-blurb">
+          <div class="portfolio-blurb-role-description">{{project.roleDescription}}</div>
+          <div clsas="portfolio-blurb-text">{{project.shortBlurb}}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="role-list" ng-show="ctrl.sortMode == 'role'">
+  ROLES
+  </section>
+</section>
