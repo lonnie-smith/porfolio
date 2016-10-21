@@ -1,0 +1,33 @@
+<p>We initially outsourced all our software development, but building similar components into different products requires a lot of duplicated effort.</p>
+<p>So I build a library that would make it easier for us to share component code across vendors. Component styling and behavior had to be neatly encapsulated so that standard widgets they could be safely combined with custom UI elements.</p>
+<p>The Shadow DOM/Web Component standard was an obviously great fit for our needs. Polymer provided a really useful functional layer on top of the standard while remaining lightweight enough that our partners could use it without being forced to adjust their own architectures.</p>
+<p>It was important to keep things modular, so that app implementors could go from using as little as a single UI widget up to building a complex application composed entirely of stock components. To make this possible, components needed to be very loosely coupled; they communicate with one another chiefly through event messaging.</p>
+<p>As an example of how that architecture works, here’s how we keep track of components’ current states, so we can save that state and restore it in the event that a user’s session is interrupted.</p>
+<ul>
+  <li>Every widget provides standard methods for getting and setting state information (see <a href="img/widget-interface.png" target="_blank">widget docs</a>). This makes it easy for app authors to hook up the widget to existing state maintenance code.</li>
+  <li>App authors may not want or need to write their own state maintenance routines. So I also built a <a href="img/state-cache.png" target="_blank">&lt;hal-state-cache&gt; component</a> to manage state of any HAL components they may be using.</li>
+  <li>If the &lt;hal-state-cache&gt; component is present on the page, widgets <a href="https://gist.github.com/lonnie-smith/32b26257d4a335917d7e9860272bd536" target="_blank">register</a> custom events with the state cache so that it knows when their state has changed.</li>
+</ul>
+
+<div class="illustrations">
+  <figure>
+    <a href="img/widget-interface.png" target="_blank">
+      <img src="img/widget-interface-thumb.png" />
+      <figcaption>Docs for Sample Widget</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="img/state-cache.png" target="_blank">
+      <img src="img/state-cache-thumb.png" />
+      <figcaption>Docs for &lt;hal-state-cache&gt;</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/32b26257d4a335917d7e9860272bd536" target="_blank">
+      <img src="img/widget-registry-thumb.png" />
+      <figcaption>Gist: registering widget with &lt;hal-state-cache&gt;</figcaption>
+    </a>
+  </figure>
+</div>

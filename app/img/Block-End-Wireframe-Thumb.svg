@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="400px" height="300px"
+	 viewBox="187 422 400 300" enable-background="new 187 422 400 300" xml:space="preserve">
+<filter  id="Shadow" filterUnits="userSpaceOnUse">
+	<feGaussianBlur  stdDeviation=".3469632" result="blur" in="SourceAlpha"></feGaussianBlur>
+	<feOffset  dy="1" dx="1" result="offset" in="blur"></feOffset>
+	<feFlood  flood-color="#ddd" result="flood"></feFlood>
+	<feComposite  operator="in" in2="offset" result="color" in="flood"></feComposite>
+	<feMerge>
+		<feMergeNode  in="color"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<defs>
+	
+	
+		<font-face  underline-thickness="49.316406" underline-position="-75.683594" font-weight="500" descent="-229.98047" ascent="770.01953" cap-height="717.28516" x-height="522.94922" slope="0" units-per-em="1000" font-size="16" font-family="Helvetica">
+		<font-face-src>
+			<font-face-name  name="Helvetica"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.316406" underline-position="-75.683594" font-weight="500" descent="-229.98047" ascent="770.01953" cap-height="717.28516" x-height="522.94922" slope="0" units-per-em="1000" font-size="14" font-family="Helvetica">
+		<font-face-src>
+			<font-face-name  name="Helvetica"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.804688" underline-position="-74.70703" font-weight="bold" descent="-207.51953" ascent="818.84766" cap-height="678.71094" x-height="508.78906" slope="0" units-per-em="1000" font-size="12" font-family="Comic Neue Angular">
+		<font-face-src>
+			<font-face-name  name="ComicNeueAngular-Bold"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="50" underline-position="-100" panose-1="2 0 5 3 0 0 0 2 0 4" font-weight="500" descent="-212.99744" ascent="951.99585" cap-height="714" x-height="517" slope="0" units-per-em="1000" font-size="16" font-family="Helvetica Neue">
+		<font-face-src>
+			<font-face-name  name="HelveticaNeue"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.804688" underline-position="-74.70703" font-weight="500" descent="-216.3086" ascent="811.03516" cap-height="682.6172" x-height="500.97656" slope="0" units-per-em="1000" font-size="12" font-family="Comic Neue Angular">
+		<font-face-src>
+			<font-face-name  name="ComicNeueAngular-Regular"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="50" underline-position="-100" panose-1="2 0 5 3 0 0 0 2 0 4" font-weight="500" descent="-212.99744" ascent="951.99585" cap-height="714" x-height="517" slope="0" units-per-em="1000" font-size="14" font-family="Helvetica Neue">
+		<font-face-src>
+			<font-face-name  name="HelveticaNeue"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="50" underline-position="-100" panose-1="2 0 8 3 0 0 0 9 0 4" font-weight="bold" descent="-216.99524" ascent="975.0061" cap-height="714" x-height="517" slope="0" units-per-em="1000" font-size="14" font-family="Helvetica Neue">
+		<font-face-src>
+			<font-face-name  name="HelveticaNeue-Bold"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.316406" underline-position="-75.683594" font-weight="bold" descent="-229.98047" ascent="770.01953" cap-height="719.72656" x-height="532.22656" slope="0" units-per-em="1000" font-size="18" font-family="Helvetica">
+		<font-face-src>
+			<font-face-name  name="Helvetica-Bold"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.804688" underline-position="-74.70703" font-weight="bold" descent="-207.51953" ascent="818.84766" cap-height="678.71094" x-height="508.78906" slope="0" units-per-em="1000" font-size="22" font-family="Comic Neue Angular">
+		<font-face-src>
+			<font-face-name  name="ComicNeueAngular-Bold"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.804688" underline-position="-74.70703" font-weight="500" descent="-216.3086" ascent="811.03516" cap-height="682.6172" x-height="500.97656" slope="0" units-per-em="1000" font-size="22" font-family="Comic Neue Angular">
+		<font-face-src>
+			<font-face-name  name="ComicNeueAngular-Regular"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.804688" underline-position="-74.70703" font-weight="500" descent="-216.3086" ascent="811.03516" cap-height="682.6172" x-height="500.97656" slope="0" units-per-em="1000" font-size="16" font-family="Comic Neue Angular">
+		<font-face-src>
+			<font-face-name  name="ComicNeueAngular-Regular"></font-face-name>
+		</font-face-src>
+	</font-face>
+	
+		<font-face  underline-thickness="49.316406" underline-position="-75.683594" font-weight="500" descent="-229.98047" ascent="770.01953" cap-height="717.28516" x-height="522.94922" slope="0" units-per-em="1000" font-size="12" font-family="Helvetica">
+		<font-face-src>
+			<font-face-name  name="Helvetica"></font-face-name>
+		</font-face-src>
+	</font-face>
+</defs>
+<g>
+	<title>Canvas 1</title>
+	<g>
+		<title>Layer 1</title>
+		<path fill="none" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" d="M579.017,682.054v-10.27l-5.584-3.994
+			L585,659.516l-6.382-5.135l0.398-227.948H196.825l0.333,130.118l-0.333,98.115l5.673,4.564l-12.764,9.13l7.091,4.564v9.129
+			H579.017z"/>
+		<rect x="196.834" y="426.433" fill="none" width="381.065" height="18.935"/>
+		
+			<rect x="196.834" y="426.433" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="381.065" height="18.935"/>
+		<rect x="196.834" y="445.368" fill="none" width="381.065" height="18.935"/>
+		
+			<rect x="196.834" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="381.065" height="18.935"/>
+		<rect x="199.201" y="426.433" fill="#FFFFFF" fill-opacity="0.75" width="17.357" height="17.357"/>
+		
+			<rect x="199.201" y="426.433" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="17.357" height="17.357"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="199.201" y1="426.433" x2="216.558" y2="443.79"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="199.201" y1="443.79" x2="216.558" y2="426.433"/>
+		<rect x="220.503" y="426.433" fill="#FFFFFF" fill-opacity="0.75" width="17.357" height="17.357"/>
+		
+			<rect x="220.503" y="426.433" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="17.357" height="17.357"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="220.503" y1="426.433" x2="237.86" y2="443.79"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="220.503" y1="443.79" x2="237.86" y2="426.433"/>
+		<rect x="241.805" y="426.433" fill="#FFFFFF" fill-opacity="0.75" width="17.357" height="17.357"/>
+		
+			<rect x="241.805" y="426.433" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="17.357" height="17.357"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="241.805" y1="426.433" x2="259.162" y2="443.79"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="241.805" y1="443.79" x2="259.162" y2="426.433"/>
+		<rect x="264.685" y="426.433" fill="#FFFFFF" fill-opacity="0.75" width="17.357" height="17.357"/>
+		
+			<rect x="264.685" y="426.433" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="17.357" height="17.357"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="264.685" y1="426.433" x2="282.042" y2="443.79"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="264.685" y1="443.79" x2="282.042" y2="426.433"/>
+		<rect x="289.142" y="426.433" fill="#FFFFFF" fill-opacity="0.75" width="17.357" height="17.357"/>
+		
+			<rect x="289.142" y="426.433" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="17.357" height="17.357"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="289.142" y1="426.433" x2="306.499" y2="443.79"/>
+		
+			<line fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" x1="289.142" y1="443.79" x2="306.499" y2="426.433"/>
+		<rect x="196.834" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="196.834" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 203.9619 457.7285)" font-family="'Helvetica'" font-size="8.4155">1</text>
+		<rect x="215.77" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="215.77" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 222.8965 457.7285)" font-family="'Helvetica'" font-size="8.4155">2</text>
+		<rect x="237.071" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="237.071" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 244.1982 457.7285)" font-family="'Helvetica'" font-size="8.4155">3</text>
+		<rect x="256.006" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="256.006" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 263.1338 457.7285)" font-family="'Helvetica'" font-size="8.4155">4</text>
+		<rect x="274.941" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="274.941" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 282.0684 457.7285)" font-family="'Helvetica'" font-size="8.4155">5</text>
+		<rect x="293.876" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="293.876" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 301.0029 457.7285)" font-family="'Helvetica'" font-size="8.4155">6</text>
+		<rect x="312.811" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="312.811" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 319.9385 457.7285)" font-family="'Helvetica'" font-size="8.4155">7</text>
+		<rect x="331.746" y="445.368" fill="none" width="18.935" height="18.935"/>
+		
+			<rect x="331.746" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="18.935" height="18.935"/>
+		<text transform="matrix(1 0 0 1 338.873 457.7285)" font-family="'Helvetica'" font-size="8.4155">8</text>
+		<rect x="350.681" y="445.368" fill="none" width="37.869" height="18.935"/>
+		
+			<rect x="350.681" y="445.368" fill="none" stroke="#268BD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5019" width="37.869" height="18.935"/>
+		<text transform="matrix(1 0 0 1 357.5439 457.7285)" font-family="'Helvetica'" font-size="7.3636">Review</text>
+		<path fill="none" d="M561.595,430.904l8.415,5.259l-8.415,5.26V430.904z"/>
+		<path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.34" d="M561.595,430.904
+			l8.415,5.259l-8.415,5.26V430.904z"/>
+		<path fill="none" d="M558.366,430.904l-8.797,5.259l8.797,5.26V430.904z"/>
+		<path fill="none" stroke="#0000FF" stroke-linecap="round" stroke-linejoin="round" d="M558.366,430.904l-8.797,5.259l8.797,5.26
+			V430.904z"/>
+		<path fill="#FF7A00" d="M531.037,441.665c-3.598,1.975-8.716,1.76-11.984-0.643c-3.589-2.639-3.589-6.917,0-9.556
+			c3.269-2.404,8.387-2.618,11.984-0.644V430.8l11.359,5.443l-11.359,5.443V441.665z"/>
+		<rect x="519.196" y="432.509" fill="#FF7A00" width="15.532" height="6.837"/>
+		<text transform="matrix(1 0 0 1 522.8965 438.0322)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.2</text>
+		<path fill="#FF7A00" d="M396.51,458.233c3.271,1.975,7.925,1.76,10.896-0.644c3.263-2.639,3.263-6.917,0-9.556
+			c-2.971-2.403-7.624-2.618-10.896-0.643v-0.022l-10.326,5.443l10.326,5.444V458.233z"/>
+		<rect x="393.155" y="449.077" fill="#FF7A00" width="14.12" height="6.838"/>
+		<text transform="matrix(1 0 0 1 396.4844 454.6006)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.1</text>
+		<text transform="matrix(1 0 0 1 303.6064 486.2764)" font-family="'HelveticaNeue'" font-size="8.4155">Y</text>
+		<text transform="matrix(1 0 0 1 308.125 486.2764)" font-family="'HelveticaNeue'" font-size="8.4155">ou have r</text>
+		<text transform="matrix(1 0 0 1 342.8896 486.2764)" font-family="'HelveticaNeue'" font-size="8.4155">eached the end of this section.</text>
+		<g filter="url(#Shadow)">
+			
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-241.5869" y1="1080.4512" x2="-241.0601" y2="1080.4512" gradientTransform="matrix(35.2145 58.6067 58.6067 -35.2145 -54506.4961 52708.375)">
+				<stop  offset="0" style="stop-color:#FFFCCC"/>
+				<stop  offset="1" style="stop-color:#FF9600"/>
+			</linearGradient>
+			<path fill="url(#SVGID_1_)" d="M308.252,525.68l11.68-22.652c0.399-0.774,1.351-1.079,2.125-0.679
+				c0.286,0.146,0.52,0.378,0.67,0.662l12.034,22.653c0.409,0.77,0.117,1.725-0.653,2.134c-0.228,0.121-0.482,0.184-0.74,0.184
+				l-23.714,0c-0.872,0-1.578-0.706-1.578-1.578C308.077,526.152,308.137,525.904,308.252,525.68z"/>
+			<path fill="none" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" d="M308.252,525.68l11.68-22.652
+				c0.399-0.774,1.351-1.079,2.125-0.679c0.286,0.146,0.52,0.378,0.67,0.662l12.034,22.653c0.409,0.77,0.117,1.725-0.653,2.134
+				c-0.228,0.121-0.482,0.184-0.74,0.184l-23.714,0c-0.872,0-1.578-0.706-1.578-1.578
+				C308.077,526.152,308.137,525.904,308.252,525.68z"/>
+		</g>
+		<circle fill="#404040" cx="321.532" cy="522.631" r="1.547"/>
+		<circle fill="none" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" cx="321.532" cy="522.631" r="1.547"/>
+		<path fill="#404040" d="M319.886,509.376c0.513-0.946,2.03-0.961,2.644-0.102s0.194,2.762,0.194,2.762l-1.331,7.297l-1.627-7.297
+			C319.765,512.036,319.374,510.323,319.886,509.376z"/>
+		<path fill="none" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" d="M319.886,509.376
+			c0.513-0.946,2.03-0.961,2.644-0.102s0.194,2.762,0.194,2.762l-1.331,7.297l-1.627-7.297
+			C319.765,512.036,319.374,510.323,319.886,509.376z"/>
+		<path fill="#FFFFFF" fill-opacity="0.3" d="M311.743,519.86l8.35-16.333c0,0,1.13-2.516,2.518-0.017
+			c1.387,2.5,5.472,10.123,5.472,10.123s-5.162,4.621-8.384,5.374C316.478,519.76,311.743,519.86,311.743,519.86z"/>
+		<text transform="matrix(1 0 0 1 342.5605 507.2246)" font-family="'HelveticaNeue'" font-size="8.4155">It looks like you have not answer</text>
+		<text transform="matrix(1 0 0 1 464.9141 507.2246)" font-family="'HelveticaNeue'" font-size="8.4155">ed </text>
+		<text transform="matrix(1 0 0 1 342.5605 516.9277)" font-family="'HelveticaNeue'" font-size="8.4155">some questions.</text>
+		<text transform="matrix(1 0 0 1 348.3467 536.0986)" font-family="'HelveticaNeue'" font-size="8.4155">•</text>
+		<text transform="matrix(1 0 0 1 361.4961 536.0986)" font-family="'HelveticaNeue'" font-size="8.4155">Question 4</text>
+		<text transform="matrix(1 0 0 1 348.3467 545.8008)" font-family="'HelveticaNeue'" font-size="8.4155">•</text>
+		<text transform="matrix(1 0 0 1 361.4961 545.8008)" font-family="'HelveticaNeue'" font-size="8.4155">Question 8</text>
+		<text transform="matrix(1 0 0 1 309.4248 561.6348)" font-family="'HelveticaNeue'" font-size="8.4155">Y</text>
+		<text transform="matrix(1 0 0 1 313.9434 561.6348)" font-family="'HelveticaNeue'" font-size="8.4155">ou can use the tabs at the top to </text>
+		<text transform="matrix(1 0 0 1 309.4248 571.3379)" font-family="'HelveticaNeue'" font-size="8.4155">r</text>
+		<text transform="matrix(1 0 0 1 312.0762 571.3379)" font-family="'HelveticaNeue'" font-size="8.4155">etur</text>
+		<text transform="matrix(1 0 0 1 326.8789 571.3379)" font-family="'HelveticaNeue'" font-size="8.4155">n to the questions in this section.</text>
+		<path fill="#FF7A00" d="M287.25,488.315c-3.598,1.975-8.716,1.761-11.985-0.644c-3.589-2.639-3.589-6.917,0-9.556
+			c3.269-2.403,8.387-2.618,11.985-0.643v-0.023l11.359,5.443l-11.359,5.443V488.315z"/>
+		<rect x="275.408" y="479.16" fill="#FF7A00" width="15.533" height="6.837"/>
+		<text transform="matrix(1 0 0 1 279.0684 484.6836)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.4</text>
+		<path fill="#FF7A00" d="M291.984,530.919c-3.599,1.975-8.716,1.76-11.985-0.643c-3.588-2.639-3.588-6.917,0-9.556
+			c3.269-2.404,8.387-2.618,11.985-0.644v-0.022l11.359,5.443l-11.359,5.443V530.919z"/>
+		<rect x="280.142" y="521.763" fill="#FF7A00" width="15.533" height="6.838"/>
+		<text transform="matrix(1 0 0 1 283.7773 527.2861)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.5</text>
+		<ellipse fill="#FF8000" cx="219.421" cy="696.76" rx="6.903" ry="7.138"/>
+		<text transform="matrix(1 0 0 1 215.6904 698.8643)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.1</text>
+		<text transform="matrix(1 0 0 1 229.7754 696.7236)" font-family="'ComicNeueAngular-Regular'" font-size="6.3116">End-of-block review screen is located on its own </text>
+		<text transform="matrix(1 0 0 1 229.7754 703.5605)" font-family="'ComicNeueAngular-Regular'" font-size="6.3116">tab after the last question (#8 in this example). </text>
+		<text transform="matrix(1 0 0 1 229.7754 710.3984)" font-family="'ComicNeueAngular-Regular'" font-size="6.3116">Review screen can be accessed at any time via </text>
+		<text transform="matrix(1 0 0 1 229.7754 717.2363)" font-family="'ComicNeueAngular-Regular'" font-size="6.3116">the next button or by tapping the “Review” tab.</text>
+		<text transform="matrix(1 0 0 1 310.707 643.6045)" font-family="'HelveticaNeue'" font-size="7.3636">If you ar</text>
+		<text transform="matrix(1 0 0 1 337.1641 643.6045)" font-family="'HelveticaNeue'" font-size="7.3636">e fi</text>
+		<text transform="matrix(1 0 0 1 346.9805 643.6045)" font-family="'HelveticaNeue'" font-size="7.3636">nished, you can go to the next section. </text>
+		<text transform="matrix(1 0 0 1 310.707 661.168)" font-family="'HelveticaNeue-Bold'" font-size="7.3636">Y</text>
+		<text transform="matrix(1 0 0 1 314.8018 661.168)" font-family="'HelveticaNeue-Bold'" font-size="7.3636">ou will not be able to r</text>
+		<text transform="matrix(1 0 0 1 392.501 661.168)" font-family="'HelveticaNeue-Bold'" font-size="7.3636">etur</text>
+		<text transform="matrix(1 0 0 1 406.6836 661.168)" font-family="'HelveticaNeue-Bold'" font-size="7.3636">n to this section </text>
+		<text transform="matrix(1 0 0 1 310.707 670.3232)" font-family="'HelveticaNeue-Bold'" font-size="7.3636">once you move on.</text>
+		<path fill="#FF7A00" d="M289.618,661.783c-3.599,1.975-8.717,1.761-11.985-0.643c-3.588-2.639-3.588-6.917,0-9.557
+			c3.269-2.403,8.387-2.618,11.985-0.644v-0.022l11.359,5.444l-11.359,5.442V661.783z"/>
+		<rect x="277.775" y="652.628" fill="#FF7A00" width="15.533" height="6.838"/>
+		<text transform="matrix(1 0 0 1 281.4922 658.1504)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.7</text>
+		<path fill="#FF8000" d="M270.539,434.648c2.312-2.646,2.061-6.41-0.752-8.814c-3.088-2.639-8.095-2.639-11.183,0
+			c-2.813,2.404-3.063,6.167-0.752,8.814h-0.027l6.37,8.353l6.37-8.353H270.539z"/>
+		<rect x="256.006" y="427.354" fill="#FF8000" width="16.568" height="6.838"/>
+		<text transform="matrix(1 0 0 1 260.1992 432.8779)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.3</text>
+		<path fill="#FF7A00" d="M557.457,668.197c3.271,1.974,7.924,1.761,10.895-0.643c3.263-2.64,3.263-6.918,0-9.557
+			c-2.971-2.403-7.623-2.619-10.895-0.644v-0.022l-10.327,5.443l10.327,5.443V668.197z"/>
+		<rect x="554.102" y="659.042" fill="#FF7A00" width="14.12" height="6.837"/>
+		<text transform="matrix(1 0 0 1 557.0703 664.5645)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.8</text>
+		<path fill="#FF7A00" d="M294.351,568.789c-3.599,1.975-8.716,1.76-11.985-0.644c-3.588-2.639-3.588-6.917,0-9.557
+			c3.269-2.402,8.386-2.617,11.985-0.643v-0.022l11.359,5.442l-11.359,5.444V568.789z"/>
+		<rect x="282.509" y="559.633" fill="#FF7A00" width="15.532" height="6.838"/>
+		<text transform="matrix(1 0 0 1 286.2227 565.1562)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.6</text>
+		<ellipse fill="#FF8000" cx="401.998" cy="697.662" rx="7.232" ry="7.139"/>
+		<text transform="matrix(1 0 0 1 397.8672 699.7676)" fill="#FFFFFF" font-family="'ComicNeueAngular-Bold'" font-size="6.3116">1.5</text>
+		<text transform="matrix(1 0 0 1 417.0869 697.5117)" font-family="'ComicNeueAngular-Regular'" font-size="6.3116">This copy would be the same regardless of </text>
+		<text transform="matrix(1 0 0 1 417.0869 704.3496)" font-family="'ComicNeueAngular-Regular'" font-size="6.3116">whether there are unanswered questions.</text>
+		<rect x="475" y="652.628" fill="#FF0000" stroke="#AAAAAA" stroke-miterlimit="10" width="69.5" height="24.372"/>
+		<text transform="matrix(1 0 0 1 478.5 669.5332)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'Calibri-Bold'" font-size="11">Leave Sectio</tspan><tspan x="56.541" y="0" fill="#FFFFFF" font-family="'Calibri-Bold'" font-size="11">n</tspan></text>
+	</g>
+</g>
+</svg>

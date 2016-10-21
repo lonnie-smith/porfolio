@@ -1,11 +1,74 @@
 angular.module('app').factory 'portfolioData', [() ->
 
+  roles = [
+    {
+      role: "Programmer"
+      workKind: "front-end development"
+      thumbnail: null
+      text: "foobar"
+    }
+    {
+      role: "Designer"
+      workKind: "design"
+      thumbnail: null
+      text: "foobar"
+    }
+    {
+      role: "Content Developer"
+      workKind: "content development"
+      thumbnail: null
+      text: "foobar"
+    }
+    {
+      role: "Product Manager"
+      workKind: "product management"
+      thumbnail: null
+      text: "foobar"
+    }
+  ]
+
+  roleIdx = {}
+  (roleIdx[r.role] = r) for r in roles
+
   projects = [
+    {
+      title: "Web Component Application Framework"
+      date: "2014-present"
+      thumbnail: "img/hal-thumb.png"
+      technologies: "Polymer"
+      shortBlurb: """
+        HAL (HTML Assessment Library) is a custom web application framework I made. It uses web components to shorten development time and helps us provide a consistent, highly-polished look-and-feel across a range of products.
+      """
+      intro: """
+        <p>My team has been working on computer-based assessments since 2010. As our work grew and diversified, we found ourselves struggling to create a visually and behaviorally consistent user interface across dozens of different products, and we often wound up re-inventing and re-implementing similar interactions.</p>
+        <p>This is a sweet spot for Web Components. I designed and built a series of components that includes both well-tested UI widgets for the most frequently occurring user interactions, and a set of modules that handle data processing and event logging in the background.</p>
+        <p>Together, these components form a custom application development framework which has <strong>cut development time by about 80%</strong>, created a unique and consistent look-and-feel across products that use the framework, and yet still has enough flexibility and configurability to allow us to create new, ad-hoc designs when we need to.</p>
+      """
+      nodes: [
+        {
+          title: "Interface Design"
+          role: roleIdx["Designer"]
+          templateUrl: "content-html/components-designer.html"
+        }
+
+        {
+          title: "Software Design"
+          role: roleIdx["Programmer"]
+          templateUrl: "content-html/components-software-design.html"
+        }
+
+        {
+          title: "Coding"
+          role: roleIdx["Programmer"]
+          templateUrl: "content-html/components-coding.html"
+        }
+
+      ]
+    }
     {
       title: "Latchkey Book Club"
       date: "2016"
       thumbnail: "img/latchkey-thumb.png"
-      roleDescription: "Sole developer"
       technologies: "Angular.js"
       shortBlurb: """
         I designed and built this site to give our book club a better way to keep up with our ever-growing list of cultural recommendations. This is an ongoing exericse in creating a dynamic, data-backed site with the absolute bare minimum in terms of back-end.
@@ -20,7 +83,8 @@ angular.module('app').factory 'portfolioData', [() ->
       nodes: [
         {
           title: "Design"
-          role: "Designer"
+          role: roleIdx["Designer"]
+          workKind: "Design"
           img: null
           text: """
             <p>The content and interactions are pretty simple for this site, so a <em>mobile-first responsive design</em> made total sense. I love the roccoco, slightly stuffy flourishes in 18<sup>th</sup>-century book design, so I took the title page/frontispiece book layout as the starting point for the visual design.</p>
@@ -30,7 +94,7 @@ angular.module('app').factory 'portfolioData', [() ->
         }
         {
           title: "Code"
-          role: "Programmer"
+          role: roleIdx["Programmer"]
           img: null
           text: """
             <p>This is a straightforward Angular 1.5 site with a couple of different routes. I try to follow John Papa’s magnificent <a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md" target="_blank">Angular Style Guide</a> pretty closely.</p>
@@ -45,8 +109,7 @@ angular.module('app').factory 'portfolioData', [() ->
     {
       title: "Scenario-based Assessment Modules"
       date: "2010-present"
-      thumbnail: null
-      roleDescription: "Product manager, Content Developer, Designer, Programmer, Software architect"
+      thumbnail: "img/sbt-thumb.png"
       shortBlurb: """
         We develop 30-minute immersive online activities in which K-12 students demonstrate real-world skills by tackling realistic problems.
       """
@@ -63,7 +126,7 @@ angular.module('app').factory 'portfolioData', [() ->
       nodes: [
         {
           title: "Content Development"
-          role: "Content Developer"
+          role: roleIdx["Content Developer"]
           img: ""
           text: """
             TEL -- 2010 - 2012.
@@ -75,7 +138,7 @@ angular.module('app').factory 'portfolioData', [() ->
         }
         {
           title: "Product Management"
-          role: "Product Manager"
+          role: roleIdx["Product Manager"]
           img: null
           text: """
             I led a team consisting of 8 content developers, 3 cognitive psychologists, 2 UI designers, and 7 software development subcontractors.
@@ -83,7 +146,7 @@ angular.module('app').factory 'portfolioData', [() ->
         }
         {
           title: "Front-end Design"
-          role: "Designer"
+          role: roleIdx["Designer"]
           img: ""
           text: """
             Our design process was a collaboration between in-house UI designers, and the artists and developers we hired as software development subcontractors.
@@ -99,20 +162,14 @@ angular.module('app').factory 'portfolioData', [() ->
 
           """
         }
+
         {
-          title: "Software development"
-          role: "Programmer"
+          title: "Software design and implementation"
+          role: roleIdx["Programmer"]
           img: null
           text: """
             - Using Polymer libraries, reduced SBT development cost by 80%
             - built platform tools (maybe goes w/ technical lead?)
-          """
-        }
-        {
-          title: "Technical leadership"
-          role: "Software architect"
-          img: null
-          text: """
             - Set up QA process
             - Guidance on platform transition
             - Write functional specifications for API, user interface
@@ -127,73 +184,23 @@ angular.module('app').factory 'portfolioData', [() ->
     }
 
     {
-      title: "Web Component Application Framework"
-      date: "2014-present"
-      thumbnail: null
-      roleDescription: "Programmer, Designer, Software architect"
-      technologies: "Polymer"
-      shortBlurb: """
-        HAL (HTML Assessment Library) is a custom web application framework I designed and built. It uses uses reusable web components to shorten development time while providing a consistent, highly-polished look-and-feel to a wide range of products.
-      """
-      intro: """
-        <p>Back in 2010, we set out to build a handful of custom-made assessment modules. As our team’s work grew and diversified, we found ourselves struggling to create a visually and behaviorally consistent user interface across dozens of different products, and we often wound up re-inventing and re-implementing similar interactions.</p>
-        <p>This is a sweet spot for Web Components. I designed and built a series of components that includes both well-tested UI widgets for the most frequently occurring user interactions, and a set of modules that handle data processing and event logging in the background.</p>
-        <p>Together, these components form a custom application development framework which has <em>cut development time by about 80%</em>, created a unique and consistent look-and-feel across products that use the framework, and yet still has enough flexibility and configurability to allow us to create new, ad-hoc designs when we need to.</p>
-      """
-      nodes: [
-        {
-          title: "Interface Designer"
-          role: "Designer"
-          img: null
-          text: """
-           - wrote initial version of style Guide
-           - created and workshopped wireframes
-           - design work ramped down in 2015 as I began to take on more implementation work.
-          """
-        }
-
-        {
-          title: "Lead software developer"
-          role: "Programmer"
-          img: null
-          text: """
-
-          """
-        }
-
-        {
-          title: "Software design and documentation"
-          role: "Software architect"
-          img: null
-          text: """
-            - I created the framework design for HAL. The basic idea is that the vast majority of component appearance and behavior should be neatly encapsulated so that application implementors don’t have to think about it, let alone re-invent it for every product with similar needs. Likewise, component configuration options should be kept to a minimum and should be exposed in HTML markup rather than requiring the ad-hoc creation of stylesheets or custom JavaScript to be created for each product.
-            - The Shadow DOM/web comonent standard was, just barely, mature enough to start using in 2014, and the way it encapsulates CSS and component behavior was an obviously great fit for our purposes. Adding Polymer to the mix was a no-brainer; it smooths over some of the rough patches in the standard, and provides a really useful functional layer on top while staying lightweight and unopinionated enough that it can be mixed and matched with whatever app frameworks our partners might want to use.
-            - I wanted to keep things modular, so that app implementors could go from using as little as a single UI widget up to building a complex application composed entirely of HAL modules. To make this possible, components needed to be very loosely coupled; they communicate with one another chiefly through JavaScript event messaging.
-            - The main challenge has been configuration: how to ensure all the components are configurable enough to cover all our constantly-evolving use cases without sacrificing too much in terms of ease-of-use, reliability, or consistency.  My biggest gains in this area have come from sticking close to the project (I provide technical assistance to app implementors, so I find out fast when something isn’t working) and spending a lot of time documenting component configuration. I love that Polymer comes with built-in mechanisms for translating JSDoc comments into browseable component documentation.
-          """
-        }
-      ]
-    }
-
-    {
       title: "eReader"
       date: "2014"
-      thumbnail: null
-      roleDescription: "Programmer, Designer"
+      thumbnail: "img/ereader-thumb.png"
       technologies: "jQuery"
       shortBlurb: "We needed to present print magazine articles, web pages, poems, and other reading test content inside a browser-based assessment platform—while preserving as much of the original content’s unique character and layout as possible. I worked on the early phases of product design, then wrote the production code."
-      intro: ""
+      intro: "foobar"
       nodes: [
         {
           title: "Interface designer"
-          role: "Designer"
+          role: roleIdx["Designer"]
           img: null
-          text: ""
+          text: "foobar"
         }
 
         {
           title: "Software design and implementation"
-          role: "Programmer"
+          role: roleIdx["Programmer"]
           img: null
           text: """
            - Since passage layouts are so idiosyncratic—literally, no two are alike—we couldn’t really build a CMS or authoring system. Instead, we lay out each passage by hand as an HTML page.
@@ -206,62 +213,42 @@ angular.module('app').factory 'portfolioData', [() ->
     }
 
     {
-      title: "Item Review Websites"
+      title: "Client Review Package Sites"
       date: "2013"
-      thumbnail: null
-      roleDescription: "Programmer, Designer"
+      thumbnail: "img/erp-thumb.png"
       technologies: "Angular.js"
-      shortBlurb: ""
-      intro: ""
+      shortBlurb: "We needed a way to bring “packages” of computer-based test content to client reviews—but had no time or budget to develop a database-backed service to support it. The solution was a pair of Angular.js applications I built: one generates a static data file from user-imported content and configuration metadata; the other displays the package, letting reviewers browse, sort, and filter the content stored in the data file."
+      intro: "foobar"
       nodes: [
         {
-          title: ""
-          role: "Designer"
+          title: "foobar"
+          role: roleIdx["Designer"]
           img: null
-          text: ""
+          text: "foobar"
         }
         {
-          title: ""
-          role: "Programmer"
+          title: "foobar"
+          role: roleIdx["Programmer"]
           img: null
-          text: ""
+          text: "foobar"
         }
       ]
     }
-
   ]
 
-  roles = [
-    {
-      role: "Programmer"
-      thumbnail: null
-      text: ""
-    }
-    {
-      role: "Designer"
-      thumbnail: null
-      text: ""
-    }
-    {
-      role: "Software Architect"
-      thumbnail: null
-      text: ""
-    }
-    {
-      role: "Content Developer"
-      thumbnail: null
-      text: ""
-    }
-    {
-      role: "Product Manager"
-      thumbnail: null
-      text: ""
-    }
-  ]
+  projectIdx = {}
+  (projectIdx[p.title] = p) for p in projects
+
+
 
   return {
     projects: projects
     roles: roles
+    getProject: (projectTitle) ->
+      return projectIdx[projectTitle]
+    getRole: (roleTitle) ->
+      return roleIdx[roleTitle]
+
   }
 
 ]

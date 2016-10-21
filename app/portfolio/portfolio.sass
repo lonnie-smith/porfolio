@@ -5,11 +5,11 @@
   padding-top: 1rem
   h1
     max-width: $max-width
-    margin: 0 auto
+    margin: 2rem auto 1rem auto
     font-family: 'Raleway'
     text-transform: uppercase
-    font-size: 2rem
-    letter-spacing: 5px
+    font-size: 3rem
+    letter-spacing: 7px
     text-align: center
     font-weight: 400
   #portfolio-ctrls
@@ -21,23 +21,79 @@
     font-size: 1.1rem
     span:first-of-type
       margin-right: 2rem
-    button
+    a
       padding: 0
       text-transform: uppercase
       border-bottom: 0.1em solid $dark-gray
-    button.active
+    a.active
       border-bottom: 0.2em solid $dark-gray
       font-weight: 700
 
   .portfolio-main-item
     width: 100%
-    padding: 2rem 0
+    padding: 2rem 1rem
+    // margin: 0 1rem
+    h2
+      width: 100%
+      max-width: $max-width
+      margin: 0.5rem auto
+      font-family: 'Raleway'
+      font-size: 1.5rem
+      font-weight: 600
+      color: lighten($blue, 10%)
+
     .portfolio-main-item-content-wrapper
       width: 100%
       max-width: $max-width
       margin: 0 auto
-    .portfolio-main-thumb
-      height: 15rem
-  // .portfolio-main-item:nth-child(even)
-  //   background-color: darken($white, 8%)
-  //   color: #000
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+    .portfolio-blurb
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-self: stretch
+      a.read-more
+        color: lighten($blue, 10%)
+        font-family: 'Raleway'
+        display: inline-block
+        font-weight: 700
+        font-size: 0.7em
+        text-transform: uppercase
+        text-decoration: underline
+    .portfolio-blurb-text
+      font-size: 1rem
+    .portfolio-blurb-role-description
+      font-family: "Raleway"
+      font-size: 0.85rem
+      line-height: 1.25rem
+      font-weight: 700
+      color: $dark-gray
+      margin-top: 1rem
+      .portfolio-blurb-role-header
+        font-weight: 600
+      .portfolio-blurb-role-link
+        text-transform: uppercase
+        color: lighten($blue, 10%)
+        letter-spacing: 0.01rem
+        text-decoration: underline
+      .portfolio-blurb-role-link:hover
+        color: lighten($blue, 30%) !important
+    img.portfolio-main-thumb
+      width: 30%
+      margin-right: 1rem
+      cursor: pointer
+
+// skinny layout
+@media (max-width: $hamburger-break-point)
+  #portfolio
+    .portfolio-main-item
+      .portfolio-main-item-content-wrapper
+        flex-direction: column
+      img.portfolio-main-thumb
+        width: 65%
+        margin-right: 0
+        margin-bottom: 1rem
+

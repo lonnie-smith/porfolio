@@ -7,6 +7,9 @@ Thumbs.db
 node_modules/*
 bower_components/*
 
+# graphics source
+img-src/*
+
 # compiled files & sourcemaps
 app/_compiled/*
 

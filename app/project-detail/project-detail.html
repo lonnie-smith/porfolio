@@ -1,1 +1,21 @@
-PROJECT DETAIL
+<div class="project-detail">
+  <h1>{{ctrl.project.title}}</h1>
+  <div class="project-detail-intro" ng-bind-html="ctrl.project.intro"></div>
+  <div class="project-detail-nav">
+    <span class="project-detail-nav-label">Skip to:</span>
+    <span ng-repeat="n in ctrl.project.nodes">
+      <a ng-href="#/project-detail/{{ctrl.project.title}}/{{n.title}}">{{n.title}}</a><span ng-hide="$last">, </span>
+    </span>
+  </div>
+
+  <div class="project-detail-node" ng-repeat="n in ctrl.project.nodes">
+    <div class="spacer" id="anchor{{n.title}}"></div>
+    <h2 class="project-detail-node-title">{{n.title}}</h2>
+    <img class="project-detail-node-img" ng-src="{{n.img}}" ng-show="n.img" />
+    <div class="project-detail-node-text" ng-show="n.templateUrl">
+      <ng-include src="n.templateUrl"></ng-include>
+    </div>
+    <div class="project-detail-node-text" ng-hide="n.templateUrl" ng-bind-html="n.text"></div>
+    <div class="project-detail-more">See other <a ng-href="#/role-detail/{{n.role.role}}">{{n.role.workKind}}</a> projects</div>
+  </div>
+</div>

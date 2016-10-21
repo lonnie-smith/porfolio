@@ -1,0 +1,54 @@
+<p>One challenge has been configuration: how do we ensure a component is configurable enough to cover our constantly-evolving use cases without sacrificing ease-of-use, reliability, or consistency?</p>
+
+<p>Usually, what works is to add new configuration properties to a widget so that modifying the appearance of the widget is as easy as adding a new attribute to the HTML. The example below shows the docs I wrote for the multiple-choice widget. All the variations shown on the demo page can be created by changing the &lt;hal-mc&gt; element’s markup.</p>
+
+<div class="illustrations">
+  <figure>
+    <a href="img/component-properties.png" target="_blank">
+      <img src="img/component-properties-thumb.png" />
+      <figcaption>Multiple-choice config properties</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="img/config-demo.png" target="_blank">
+      <img src="img/config-demo-thumb.png" />
+      <figcaption>Multiple-choice variations</figcaption>
+    </a>
+  </figure>
+</div>
+
+<p>Finding effective ways of applying the principles of BDD to component development has been another challenge. Polymer’s built-in Web Component Tester is a big help here. Still, there’s a lot about components—especially their appearance in different contexts—that isn’t practical to automate this way, so manual testing is still a slog. The code sample below shows a Mocha test suite for the multiple-choice widget.</p>
+
+<div class="illustrations">
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/b945363f010d2d61517a333c4e5cb1f7" target="_blank">
+      <img src="img/test-suite-thumb.png" />
+      <figcaption>Gist: Mocha test suite</figcaption>
+    </a>
+  </figure>
+</div>
+
+<p>Here are full code samples for the multiple-choice widget. Wherever I can, I like to use <strong>Sass</strong> and <strong>Coffeescript</strong>. I always try to keep stylesheets, scripts, and markup in separate files, and I keep each component’s source in separate folders. Aside from JSDoc-style comments that generate the API documentation, I try to keep comments pretty minimal. <strong>Grunt</strong> automates compiling and concatenating source files; <strong>Bower</strong> manages dependencies (and for deploying the library to client code), and we host the library in a private <strong>GitHub</strong> repo.</p>
+<div class="illustrations">
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/7dc0561f20f4ea86fd061c07f19d7b61" target="_blank">
+      <img src="img/widget-html-thumb.png" />
+      <figcaption>HTML</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/93139ad98b65b57fd7f7b4c80e59c580" target="_blank">
+      <img src="img/widget-coffeescript-thumb.png" />
+      <figcaption>Coffeescript</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/4ace379a47208ca258cd71e9b94288a6" target="_blank">
+      <img src="img/widget-sass-thumb.png" />
+      <figcaption>Sass</figcaption>
+    </a>
+  </figure>
+</div>
