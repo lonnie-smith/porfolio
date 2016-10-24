@@ -33,6 +33,7 @@
 // skinny layout
 @media (max-width: $hamburger-break-point)
   #about
+    min-height: calc(100vh - 2rem)
     img
       position: relative
       width: 100%
@@ -56,12 +57,14 @@
 @media (min-width: $hamburger-break-point)
   #about
     padding: 1rem 0
+    min-height: calc(100vh - 3rem)
     img
       display: block
       width: 45%
       position: absolute
     .headings, p
       margin-left: calc(45% + 2rem)
+      padding-right: 2rem
     .headings
       font-size: 1.5rem
     p:first-of-type

@@ -59,11 +59,9 @@
 @media (min-width: $hamburger-break-point)
   #menu
     width: 100%
-    left: 50%
-    transform: translateX(-50%)
+    height: 3rem
     padding: 1rem 0.5rem
     font-weight: 400
-    // background-color: rgba($blue, 0.85)
     background-color: $blue
     +z-depth-1
     #menu-toggle
@@ -80,6 +78,8 @@
       text-decoration: none
     li
       display: inline-block
+      margin: 0
+      line-height: 1
       a.menu-active
         color: lighten($orange, 10%)
         border-bottom: 0.15rem solid lighten($orange, 10%)
