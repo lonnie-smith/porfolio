@@ -25,6 +25,8 @@
       padding: 0
       text-transform: uppercase
       border-bottom: 0.1em solid $dark-gray
+      text-decoration: none
+      color: $dark-gray
     a.active
       border-bottom: 0.2em solid $dark-gray
       font-weight: 700
@@ -41,6 +43,8 @@
       font-size: 1.5rem
       font-weight: 600
       color: lighten($blue, 10%)
+      a
+        text-decoration: none
 
     .portfolio-main-item-content-wrapper
       width: 100%
@@ -65,22 +69,22 @@
         text-decoration: underline
     .portfolio-blurb-text
       font-size: 1rem
-    .portfolio-blurb-role-description
+    .portfolio-blurb-detail-description
       font-family: "Raleway"
       font-size: 0.85rem
       line-height: 1.25rem
       font-weight: 700
       color: $dark-gray
       margin-top: 1rem
-      .portfolio-blurb-role-header
-        font-weight: 600
-      .portfolio-blurb-role-link
-        text-transform: uppercase
-        color: lighten($blue, 10%)
-        letter-spacing: 0.01rem
-        text-decoration: underline
-      .portfolio-blurb-role-link:hover
-        color: lighten($blue, 30%) !important
+    .portfolio-blurb-detail-header
+      font-weight: 600
+    .portfolio-blurb-detail-link
+      text-transform: uppercase
+      color: lighten($blue, 10%)
+      letter-spacing: 0.01rem
+      text-decoration: underline
+    .portfolio-blurb-detail-link:hover
+      color: lighten($blue, 30%) !important
     img.portfolio-main-thumb
       width: 30%
       margin-right: 1rem

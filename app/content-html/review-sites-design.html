@@ -1,0 +1,75 @@
+<p>Core feature requirements for this project were the ability to upload review content, and customize what metadata is shown on each page. We also needed to balance flexibility, since every package has its own unique needs, and uniformity, since reviewers might use dozens of different review sites over the course of a year and need to have a similar experience.</p>
+
+<p>Since I didn’t have much time to complete this project, design consisted of quick, lo-fi wireframes, which I spent a few days workshopping with project stakeholders to nail down the most important aspects of layout and functionality. Some of the bigger design challenges, such as how to display complex data sets, didn’t emerge until I was in the middle of implementation, so we worked them out over the course of a few iterations on the production code. The screenshot below shows how we used color coded data, multiple tables, and additional column labels to squeeze response data into the required tabular format.</p>
+
+<div class="illustrations">
+  <figure>
+    <a href="img/review-package-wireframes.pdf" target="_blank">
+      <img src="img/review-package-wireframes-thumb.png" />
+      <figcaption>Balsamiq Wireframes</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="img/review-package-data-screenshot.png" target="_blank">
+      <img src="img/review-package-data-screenshot-thumb.png" />
+      <figcaption>Screenshot: final design for data tables</figcaption>
+    </a>
+  </figure>
+</div>
+
+<p>Unsurprisingly, we ran into some usability problems with the initial version of the review sites, so I added a few features to help reviewers navigate and make sense of the packages. A couple of examples are below—</p>
+<ul>
+  <li>The “guided tour” is a simple carousel with annotated screenshots introducing new reviewers to important features.</li>
+  <li>Package assemblers can annotate any metadata field with on-demand help text. Help links are indicated with dotted green underline.</li>
+</ul>
+
+<div class="illustrations">
+  <figure>
+    <a href="img/review-package-tour-screenshot.png" target="_blank">
+      <img src="img/review-package-tour-screenshot-thumb.png" />
+      <figcaption>Screenshot: Guided Tour</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="img/review-package-help.png" target="_blank">
+      <img src="img/review-package-help-thumb.png" />
+      <figcaption>Screenshot: on-demand help</figcaption>
+    </a>
+  </figure>
+</div>
+
+<p>Review sites have complex configuration options, so having to key all the configuration data into a spreadsheet every time you want to make a new site isn’t a great solution, usability-wise, for the folks putting these sites together.</p>
+
+<p>When it became clear that we might be using the review sites for the long haul, I went back and built a GUI to help package assemblers configure packages without the need for painstakingly editing config spreadsheets.</p>
+<ul>
+  <li>Screenshot 1: the package builder app is organized as a single scrolling page, with each package creation step presented as a unit with embedded instructions. The left-hand sidebar functions both as a checklist and as a scrollSpy-style navigation menu.</li>
+  <li>Screenshot 2: configuring which metadata will be displayed for users and how it will look.</li>
+  <li>Screenshot 3: constructing “item groups”—subsets of package questions—in pretty much the same way you define smart playlists in iTunes.</li>
+</ul>
+
+<div class="illustrations">
+  <figure>
+    <a href="img/package-builder-1.png" target="_blank">
+      <img src="img/package-builder-1-thumb.png" />
+      <figcaption>Screenshot 1: Navigation &amp; sidebar</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="img/package-builder-2.png" target="_blank">
+      <img src="img/package-builder-2-thumb.png" />
+      <figcaption>Screenshot 2: Configuring metadata</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="img/package-builder-3.png" target="_blank">
+      <img src="img/package-builder-3-thumb.png" />
+      <figcaption>Screenshot 1: Setting up item groups</figcaption>
+    </a>
+  </figure>
+
+</div>
+

@@ -9,6 +9,14 @@ angular.module('app').controller 'MenuCtrl', [
           contact: 'Contact'
         }
 
+        @routePageMap = {
+          'about': 'about'
+          'portfolio': 'portfolio'
+          'project-detail': 'portfolio'
+          'resume': 'resume'
+          'contact': 'contact'
+        }
+
         @setActiveLink()
         $scope.$on('$locationChangeSuccess', ()=>@setActiveLink())
 
@@ -17,19 +25,19 @@ angular.module('app').controller 'MenuCtrl', [
         # hide the menu when anything not a child of #menu is clicked.
         document.addEventListener('click', (evt) =>
           @menuNode ||= document.querySelector('#menu')
-          console.debug evt.target, @menuOpen, !@menuNode.contains(evt.target)
           if @menuOpen and !@menuNode.contains(evt.target)
-            console.debug('docu click')
             @toggleMenu()
             $scope.$apply()
           )
-        # document.addEventListener('click', ()=> console.debug('document click'))
 
       setActiveLink: () =>
         @activeLinks ||= {}
         @activeLinks[k] = false for k, v of @activeLinks
-        page = $location.path().slice(1).split('/')[0]
-        page = 'about' if page is ''
+        route = $location.path().slice(1).split('/')[0]
+        if route is ''
+          page = 'about'
+        else
+          page = @routePageMap[route]
         @activeLinks[page] = true
         @currentLinkText = @pageTextMap[page]
         @toggleMenu() if @menuOpen
@@ -39,7 +47,6 @@ angular.module('app').controller 'MenuCtrl', [
           @menuOpen = !@menuOpen
         else
           @menuOpen = false
-        console.debug 'toggle menu', @menuOpen
 
 
 ]

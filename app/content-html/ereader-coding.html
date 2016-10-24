@@ -1,0 +1,46 @@
+<p>Given the diversity of content layout—no two passages are alike—we knew we couldn’t reasonably build a CMS-like authoring system for passages. In order to get letter-perfect passage layouts, we hired designers and web developers to lay out each passage by hand.</p>
+
+<p>My job was writing the shared code that would provide each passage with a shared set of interactive features like page navigation, dialog boxes, video playback, and user activity tracking. I implemented each feature in a separate AMD-style module. Passage authors mark up each passage with special class names to identify key features—say, the pages in a magazine article or the content that should appear in a dialog box. The correct modules are loaded based on the presence of elements in the DOM with these class names, and each module uses jQuery to manipulate the DOM and append user controls. Interoperation with the host application is handled through a JavaScript API I specced out.</p>
+
+<p>The code samples below illustrate how I implemented the <a href="img/lookback.pdf" target="_blank">“Lookback Button”</a> feature. For context, here’s a video of the feature in action.</p>
+
+<div class="illustrations">
+  <figure>
+    <a href="img/ereader-lbb-demo.mp4" target="_blank">
+      <img src="img/ereader-lbb-demo-thumb.png" />
+      <figcaption>Lookback Button Demo</figcaption>
+    </a>
+  </figure>
+</div>
+
+<p>First, we needed a succint way for passage authors to mark the beginning and end of a Lookback section. These sections can overlap and often span chunks of passage markup awkwardly (for example, a section could begin in the middle of one <code>&lt;p&gt;</code> element and end in the middle of another). Adding markup for lookback sections in and among the normal layout markup would be pretty cumbersome, so we just asked page authors to place a special element at the beginning, and another at the end, of lookback sections. <a href="https://gist.github.com/lonnie-smith/c9f1640ac574cf1a5512f649b560d9f7" target="_blank">Code sample 1</a> shows a snippet of a passage with <code>&lt;focus-start&gt;</code> and <code>&lt;focus-end&gt;</code> tags added. <a href="https://gist.github.com/lonnie-smith/d5fa99f706a028ca1798425689ebafff" target="_blank">Code sample 2</a> shows the the function that litters the otherwise-readable page with the markup needed to highlight the relevant section.</p>
+
+<p>Next, different passages use different navigation controls. For example, some passages use pages, while others scroll or are navigated by means of menus. Each navigation module therefore needs to handle moving to the lookback section in a different way. Each navigation control implements its own event handler, so each control can respond independently of the others. <a href="https://gist.github.com/lonnie-smith/ece50e1a95a71ba56124e23ee59babb7" target="_blank">Code sample 3</a> shows the event handler used by the paging module.
+</p>
+
+<div class="illustrations">
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/c9f1640ac574cf1a5512f649b560d9f7" target="_blank">
+      <img src="img/ereader-1-thumb.png" />
+      <figcaption>Sample 1: simple handmade markup</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/d5fa99f706a028ca1798425689ebafff" target="_blank">
+      <img src="img/ereader-2-thumb.png" />
+      <figcaption>Sample 2: adding cluttery markup at run time</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="https://gist.github.com/lonnie-smith/ece50e1a95a71ba56124e23ee59babb7" target="_blank">
+      <img src="img/ereader-3-thumb.png" />
+      <figcaption>Sample 3: lookback event handler</figcaption>
+    </a>
+  </figure>
+</div>
+
+
+
+

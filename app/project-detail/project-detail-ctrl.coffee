@@ -4,9 +4,11 @@ angular.module('app').controller 'ProjectDetailCtrl',
         constructor: () ->
           @project = portfolioData.getProject($routeParams.projectId)
           if $routeParams.nodeTitle?
-            $location.hash('anchor' + $routeParams.nodeTitle)
-            $location.replace()
-
+            for node in @project.nodes
+              if $routeParams.nodeTitle in [node.title, node.role.role]
+                $location.hash('anchor' + node.title)
+                $location.replace()
+                break
 
 
 ]

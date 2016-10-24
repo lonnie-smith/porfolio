@@ -12,9 +12,12 @@
         <img class="portfolio-main-thumb" ng-show="project.thumbnail" ng-src="{{project.thumbnail}}" ng-click="ctrl.gotoProject(project.title)"/>
         <div class="portfolio-blurb">
           <p class="portfolio-blurb-text">{{project.shortBlurb}} <a class="read-more" ng-href="#/project-detail/{{project.title}}"> More&hellip;</a></p>
-          <div class="portfolio-blurb-role-description"><span class="portfolio-blurb-role-header">Roles:</span>
+          <div class="portfolio-blurb-detail-description">
+            <span class="portfolio-blurb-detail-header">Framework:</span>
+            <span class="">{{project.technologies}}</span><br />
+            <span class="portfolio-blurb-detail-header">Roles:</span>
             <span ng-repeat="n in project.nodes">
-              <a class="portfolio-blurb-role-link" ng-href="#/project-detail/{{project.title}}/{{n.title}}">
+              <a class="portfolio-blurb-detail-link" ng-href="#/project-detail/{{project.title}}/{{n.title}}">
                 {{n.title}}
               </a>
               <span ng-show="!$last">, </span>
@@ -25,8 +28,17 @@
     </div>
   </section>
 
-
-  <section class="role-list" ng-show="ctrl.sortMode == 'role'">
-  ROLES
+  <section class="role-list" ng-show="ctrl.sortMode == 'roles'">
+    <div class="portfolio-main-item" ng-repeat="r in ctrl.roles">
+      <h2><a ng-href="#/role-detail/{{r.role}}">{{r.title}}</a></h2>
+      <div class="portfolio-main-item-content-wrapper">
+        <div class="portfolio-blurb">
+          <p class="portfolio-blurb-text" ng-bind-html="r.shortBlurb"></p>
+          <p class="portfolio-blurb-detail-description">See <a class="portfolio-blurb-detail-link" ng-href="#/role-detail/r.role">{{r.workKind}}</a> work.</p>
+        </div>
+      </div>
+    </div>
   </section>
+
+
 </section>

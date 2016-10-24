@@ -1,0 +1,22 @@
+<p>This is a straightforward Angular 1.5 site with a couple of different routes. I try to follow John Papa’s magnificent <a href="https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md" target="_blank">Angular Style Guide</a> pretty closely.</p>
+<p>The data management techniques are interesting: I wrote an Angular service that pulls data from a <a href="https://docs.google.com/spreadsheets/d/1JBruoPcv0lNNLqP8MtLgtLPYubHREutb1xZTmR0WMdE/edit#gid=929365538" target="_blank">Google spreadsheet</a>, and another which queries the Google Books API to provide book data and book cover thumbnails.</p>
+
+<div class="illustrations">
+  <figure>
+    <a href="https://github.com/lonnie-smith/latchkey-book-club/blob/master/app/services/google-spreadsheet-data.coffee" target="_blank">
+      <img src="img/latchkey-google-spreadsheet-thumb.png" />
+      <figcaption>Spreadsheet Service</figcaption>
+    </a>
+  </figure>
+
+  <figure>
+    <a href="https://github.com/lonnie-smith/latchkey-book-club/blob/master/app/services/meeting.coffee" target="_blank">
+      <img src="img/latchkey-book-service-thumb.png" />
+      <figcaption>Google Books Service</figcaption>
+    </a>
+  </figure>
+
+</div>
+
+<p>This approach wouldn’t work for every project, but with a little tweaking (say, a Node script to pre-package the data in static JSON files), it <em>could</em> be a quick solution for a high-volume site with simple data needs.</p>
+<p>The full code for this project is available on <a href="https://github.com/lonnie-smith/latchkey-book-club" target="_blank">GitHub</a>.

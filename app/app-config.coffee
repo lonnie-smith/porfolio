@@ -17,10 +17,6 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
     }
   }
 
-  # $routeProvider.when '/portfolio/', {
-  #   redirectTo: '/portfolio/projects'
-  # }
-
   $routeProvider.when '/portfolio', {
     templateUrl: 'portfolio/portfolio.html',
     controller: 'PortfolioCtrl'
@@ -41,7 +37,7 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
     }
   }
 
-  $routeProvider.when '/role-detail/:roleId', {
+  $routeProvider.when '/role-detail/:roleId/:projectTitle?', {
     templateUrl: 'role-detail/role-detail.html',
     controller: 'RoleDetailCtrl'
     controllerAs: 'ctrl'
