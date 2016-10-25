@@ -5,6 +5,11 @@
   color: $white
   position: relative
 
+  #about-content
+    position: relative
+    max-width: $max-width
+    margin: 0 auto
+
   h1, h2
     position: relative
     letter-spacing: 2px
@@ -45,12 +50,36 @@
       text-decoration: none
     i
       font-size: 1.25rem
-      margin-right: 0.5rem
+      margin-right: 0.25rem
+    i.icon-phone
+      margin-right: 0
+
+// normal layout
+@media (min-width: $hamburger-break-point)
+  #about
+    padding: 1rem 0 4rem 0
+    min-height: calc(100vh - 3rem)
+    img
+      display: block
+      width: 45%
+      margin-right: 1rem
+      margin-bottom: 1rem
+      position: absolute
+      // float: left
+    .headings, p, #contact
+      margin-left: calc(45% + 2rem)
+      // padding-right: 2rem
+    .headings
+      font-size: 1.5rem
+    p:first-of-type
+      padding-top: 1rem
+      // font-family: Raleway
 
 // skinny layout
 @media (max-width: $hamburger-break-point)
   #about
     min-height: calc(100vh - 3rem)
+    padding-bottom: 4rem
     img
       position: relative
       width: 100%
@@ -67,23 +96,3 @@
       padding: 0 1rem
     p:first-of-type
       margin-top: 1rem
-    p:last-of-type
-      padding-bottom: 4rem
-
-// normal layout
-@media (min-width: $hamburger-break-point)
-  #about
-    padding: 1rem 0
-    min-height: calc(100vh - 3rem)
-    img
-      display: block
-      width: 45%
-      position: absolute
-    .headings, p, #contact
-      margin-left: calc(45% + 2rem)
-      padding-right: 2rem
-    .headings
-      font-size: 1.5rem
-    p:first-of-type
-      padding-top: 1rem
-      // font-family: Raleway
