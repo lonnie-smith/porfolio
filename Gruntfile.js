@@ -129,14 +129,14 @@ module.exports = function(grunt) {
         }
       }
     },
-    // shell: {
-    //   nukeProduction: {
-    //     command: "ssh alchemist@supernumerary.org 'rm -rf /var/www/latchkeybook.club/public'"
-    //   },
-    //   copyProduction: {
-    //     command: "scp -r ./build alchemist@supernumerary.org:/var/www/latchkeybook.club/public"
-    //   }
-    // }
+    shell: {
+      nukeProduction: {
+        command: "ssh alchemist@supernumerary.org 'rm -rf /var/www/lonnie-smith.com/public'"
+      },
+      copyProduction: {
+        command: "scp -r ./build alchemist@supernumerary.org:/var/www/lonnie-smith.com/public"
+      }
+    }
   });
 
   grunt.loadNpmTasks("grunt-contrib-connect");
@@ -164,9 +164,9 @@ module.exports = function(grunt) {
     'inline_angular_templates:build'
   ]);
 
-  // grunt.registerTask('deployProduction', [
-  //   'shell:nukeProduction',
-  //   'shell:copyProduction'
-  // ])
+  grunt.registerTask('deployProduction', [
+    'shell:nukeProduction',
+    'shell:copyProduction'
+  ])
 
 }
