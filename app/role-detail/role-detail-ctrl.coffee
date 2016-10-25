@@ -2,8 +2,11 @@ angular.module('app').controller 'RoleDetailCtrl', ['$routeParams', '$location',
     return new class RoleDetailCtrl
       constructor: () ->
         @role = portfolioData.getRole($routeParams.roleId)
-        # TODO: scroll down to relevant project
-        # if $routeParams.projectTitle?
-
+        if $routeParams.projectTitle?
+          for project in @role.projects
+            if $routeParams.projectTitle is project.title
+              $location.hash('anchor' + project.title)
+              $location.replace()
+              break
 
 ]

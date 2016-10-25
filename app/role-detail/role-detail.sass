@@ -1,1 +1,91 @@
 @import '../layout/shared-variables'
+
+.role-detail
+  width: 100%
+  padding-top: 1rem
+
+  h1, h2, .role-detail-intro, .role-detail-nav, .role-detail-node
+    max-width: $max-width
+    margin-left: auto
+    margin-right: auto
+
+  h1
+    margin-top: 2rem
+    margin-bottom: 1rem
+    font-family: 'Raleway'
+    text-transform: uppercase
+    font-size: 3rem
+    letter-spacing: 5px
+    text-align: center
+    font-weight: 400
+
+  .role-detail-nav
+    font-family: "Raleway"
+    font-size: 0.85rem
+    line-height: 1.25rem
+    font-weight: 700
+    color: $dark-gray
+    margin-top: 3rem
+    text-align: center
+    .role-detail-nav-label
+      font-weight: 600
+    a
+      text-transform: uppercase
+
+  .spacer
+    height: 4rem
+
+  .role-detail-node
+    margin-bottom: 2rem
+
+    h2
+      margin-bottom: 0.5rem
+      font-family: 'Raleway'
+      font-size: 1.5rem
+      font-weight: 600
+
+    ul
+      margin: 0 auto
+      width: 75%
+      li
+        font-size: 0.9em
+        margin-bottom: 1em
+
+    .illustrations
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: space-around
+      align-items: stretch
+      margin: 2rem 0
+
+      figure
+        background-color: #fff
+        width: 30%
+        text-align: center
+        padding: 0.75rem
+        +z-depth-1
+
+      figcaption
+        font-family: "Raleway"
+        font-weight: 600
+        font-size: 0.85rem
+        margin-top: 0.75rem
+        text-transform: uppercase
+        code
+          text-transform: none
+
+      img
+        border: 1px solid $light-gray
+
+
+    .role-detail-more
+      font-family: "Raleway"
+      font-size: 0.85rem
+      line-height: 1.25rem
+      font-weight: 700
+      color: $dark-gray
+      margin-top: 1rem
+      a
+        text-transform: uppercase
+

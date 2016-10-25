@@ -1,1 +1,97 @@
 @import '../layout/shared-variables'
+
+#resume
+  width: 100%
+  padding: 1rem 2rem
+
+
+  h1, section, .resume-contact-info
+    max-width: $max-width
+    margin-left: auto
+    margin-right: auto
+
+  .resume-contact-info
+    font-family: 'Raleway'
+    text-align: center
+    letter-spacing: 1px
+    font-size: 0.9em
+
+  section
+    border-bottom: 1px solid $dark-gray
+    padding: 3rem 0
+
+  section:last-child
+    margin-bottom: 4rem
+
+  p:last-child
+    margin-bottom: 0
+
+  h1
+    margin-top: 2rem
+    margin-bottom: 1rem
+    font-family: 'Raleway'
+    text-transform: uppercase
+    font-size: 3rem
+    letter-spacing: 5px
+    text-align: center
+    font-weight: 700
+    color: $blue
+
+  h2
+    margin-bottom: 2rem
+    font-family: 'Raleway'
+    font-size: 1.5rem
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 3px
+
+  section#resume-technical-skills
+    .skills-wrapper
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+    .skills-section
+      width: 31%
+
+      h3
+        font-family: 'Raleway'
+        font-size: 1.1rem
+        font-weight: 700
+        text-transform: uppercase
+        margin-top: 1rem
+        margin-bottom: 0.5em
+
+      ul
+        list-style: none
+        width: 100%
+
+  h3
+    font-family: 'Raleway'
+    font-weight: 400
+    margin-bottom: 1em
+    margin-top: 2em
+    .title
+      text-transform: uppercase
+      font-weight: 700
+      letter-spacing: 1px
+
+
+// skinny layout
+@media (max-width: $hamburger-break-point)
+  #resume
+    section
+      padding: 2rem 0
+
+    section#resume-technical-skills
+      .skills-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+
+      .skills-section
+        width: 100%
+
+      li
+        margin-bottom: 0.5rem
+

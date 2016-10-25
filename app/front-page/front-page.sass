@@ -30,10 +30,27 @@
     color: #fff
     text-decoration: underline
 
+  #contact
+    font-family: 'Raleway'
+    font-weight: 600
+    letter-spacing: 1px
+    ul
+      list-style: none
+      width: 100%
+    li
+      margin-right: 1rem
+      display: inline-block
+      margin-bottom: 0.25rem
+    a
+      text-decoration: none
+    i
+      font-size: 1.25rem
+      margin-right: 0.5rem
+
 // skinny layout
 @media (max-width: $hamburger-break-point)
   #about
-    min-height: calc(100vh - 2rem)
+    min-height: calc(100vh - 3rem)
     img
       position: relative
       width: 100%
@@ -62,7 +79,7 @@
       display: block
       width: 45%
       position: absolute
-    .headings, p
+    .headings, p, #contact
       margin-left: calc(45% + 2rem)
       padding-right: 2rem
     .headings

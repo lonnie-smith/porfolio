@@ -13,6 +13,7 @@ angular.module('app').controller 'MenuCtrl', [
           'about': 'about'
           'portfolio': 'portfolio'
           'project-detail': 'portfolio'
+          'role-detail': 'portfolio'
           'resume': 'resume'
           'contact': 'contact'
         }

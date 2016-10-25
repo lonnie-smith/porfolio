@@ -29,12 +29,25 @@
   </section>
 
   <section class="role-list" ng-show="ctrl.sortMode == 'roles'">
-    <div class="portfolio-main-item" ng-repeat="r in ctrl.roles">
+    <div class="portfolio-main-item" ng-repeat="r in ctrl.roles" ng-show="r.projects.length > 0">
       <h2><a ng-href="#/role-detail/{{r.role}}">{{r.title}}</a></h2>
       <div class="portfolio-main-item-content-wrapper">
         <div class="portfolio-blurb">
-          <p class="portfolio-blurb-text" ng-bind-html="r.shortBlurb"></p>
-          <p class="portfolio-blurb-detail-description">See <a class="portfolio-blurb-detail-link" ng-href="#/role-detail/r.role">{{r.workKind}}</a> work.</p>
+          <p class="portfolio-blurb-text">
+            <span ng-bind-html="r.shortBlurb"></span>
+            <a class="read-more" ng-href="#/role-detail/{{r.role}}"> More&hellip;</a>
+          </p>
+          <p class="portfolio-blurb-detail-description">
+            <span class="portfolio-blurb-detail-header">{{r.workKind}} projects: </span>
+
+
+            <span ng-repeat="p in r.projects">
+              <a class="portfolio-blurb-detail-link" ng-href="#/role-detail/{{r.role}}/{{p.title}}">
+                {{p.title}}
+              </a>
+              <span ng-show="!$last">, </span>
+            </span>
+          </p>
         </div>
       </div>
     </div>

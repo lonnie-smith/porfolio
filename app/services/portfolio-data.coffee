@@ -5,12 +5,12 @@ angular.module('app').factory 'portfolioData', [() ->
       role: "Programmer"
       title: "Front-end Web Developer"
       workKind: "front-end development"
-      shortBlurb: "I’m a front-end web developer with a focus on building feature-rich single page apps using <strong>Angular</strong> and <strong>Polymer</strong>."
+      shortBlurb: "I’m a front-end web developer with a focus on building feature-rich single page apps. Special areas of interest are <strong>Angular</strong> and <strong>Polymer</strong>, but I also have a range of experience working on everything from Java to ."
       text: """
         <p>My bread-and-butter is single-page web applications; special areas of interest are <strong>Angular</strong> and <strong>Polymer</strong>, with a sideline in automated testing. I use <strong>Coffeescript</strong> a lot, because I love how  expressive and succinct it is. I use <strong>Sass</strong> quite a bit too, mostly in larger projects where variables, mixins, and functions are more useful. <strong>Git</strong>, <strong>Bower</strong>, and <strong>Grunt</strong> are parts of my toolchain I use daily.</p>
         <p>I’m no unicorn, but I am a well-rounded generalist—</p>
         <ul>
-          <li>I have experience <a href="#/role-detail/Designer">designing products</a> and <a href="#/Product%20Manager">managing their development</a>.</li>
+          <li>I like designing things. I did some or all of the <a href="#/role-detail/Designer">design work</a> for many of the projects in this portfolio. <!--and <a href="#/Product%20Manager">managing their development</a>.--></li>
           <li>In days of yore, I used to write quite a bit of <strong>Python</strong>, and I once wrote a good-sized <strong>Rails</strong> app that never saw the light of day. In school, I did a bunch of projects in <strong>Java</strong> and <strong>C</strong>, and I wrote my very first web app in Visual Basic / SQL Server / ASP Classic. I can write a <strong>SQL</strong> query, design a database schema, and read a UML diagram.</li>
           <li>I can provision and secure a Linux virtual server, configure NGINX or Apache, set up cron jobs and open-source databases, and do other general <strong>sysadmin work</strong>.</li>
           <li>In my current job, I spend a lot of my time coordinating the work of developers at different companies who are building software that needs to interoperate. I have hard-won experience <strong>writing technical specs</strong>, <strong>designing APIs</strong>, <strong>defining scopes of work</strong>, <strong>troubleshooting</strong> Other People’s Code, and developing <strong>QA testing</strong> protocols.</li>
@@ -21,27 +21,25 @@ angular.module('app').factory 'portfolioData', [() ->
       role: "Designer"
       title: "Designer"
       workKind: "design"
-      thumbnail: null
+      shortBlurb: "I’m a design-savvy developer. For most of my projects, I collaborate with clients and colleagues to gather design requirements, draft a slate of potential interface/interaction designs, and create wireframes, mockups, or functional prototypes as the occasion requires."
       text: """
-        - Comfortable with typography and layout, but work I'm proudest of was done in collaboration with a visual artist.
-        - Strength as a designer comes with my facility with code: I can move quickly from design sketches to working prototypes -- if I need a quick functional prototype, I'll turn to CodePen instead of a prototyping tool, and in particular I try to avoid glossy Photoshop mock-ups.
-        - hard-won experience in consensus-building; good at breaking down design decisions for non-technical stakeholders, walking them through various alternatives, and presenting a case for what I think is best for their needs. Good at talking to people and figuring out what it is they want/need; gathering and prioritizing requiements (we don't have in-house business analysts).
-        - due to peculiarities of industry, user research is almost exclusively limited to usability testing: I don't have much experience with market research, personas, or many of the other accoutrements of UX design.
-        - Projects are pretty unusual -- we have an extremely clear sense of what tasks a user needs to perform -- User’s experience limited to about an hour -- little tolerance for experimentation -- cross-section of the population; safest to assume that the only thing users have in common is their age; in particular, users have radically varying levels of technological literacy, and we have to assume that they may have little-to-no exposure to even fairly common UI elements.
+        <p>My strengths as a designer come from my facility with code: I can move quickly from design sketches to working prototypes. When I need to gather feedback on potential design alternatives, I often prefer to code up live demos rather than draw pictures.</p>
+        <p>A lot of my design experience comes from projects which needed a lot of painstaking consensus-building. I’ve gotten good at breaking down design decisions for non-technical stakeholders, walking them through alternatives, and presenting a case for I think will work best for their needs.</p>
+        <p>I like working on typography and layout, but I’m most proud of projects I’ve done in collaboration with a talented visual designer. User testing is pretty important to many of the projects I work on, but we typically don’t conduct user testing in-house, so my experience there has mostly been limited to working testing specialists and to expose and remedy usability problems at the prototype stage.</p>
       """
     }
     {
       role: "Product Manager"
       title: "Product Manager"
       workKind: "product management"
-      thumbnail: null
+      shortBlurb: "shortBlurb"
       text: "foobar"
     }
     {
       role: "Content Developer"
       title: "Content Developer"
       workKind: "content development"
-      thumbnail: null
+      shortBlurb: "shortBlurb"
       text: "foobar"
     }
   ]

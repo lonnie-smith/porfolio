@@ -1,0 +1,23 @@
+<div class="role-detail">
+  <h1>{{ctrl.role.title}}</h1>
+  <div class="role-detail-intro" ng-bind-html="ctrl.role.text"></div>
+  <div class="role-detail-nav">
+    <span class="role-detail-nav-label">Skip to:</span>
+    <span ng-repeat="p in ctrl.role.projects">
+      <a ng-href="#/role-detail/{{ctrl.role.role}}/{{p.title}}">{{p.title}}</a><span ng-hide="$last">, </span>
+    </span>
+  </div>
+
+  <div ng-repeat="p in ctrl.role.projects">
+    <div class="spacer" id="anchor{{p.title}}"></div>
+    <div class="role-detail-node" ng-repeat="n in p.nodes" ng-show="n.role === ctrl.role">
+      <h2 class="role-detail-node-title">{{p.title}}: {{n.title}}</h2>
+      <div class="role-detail-node-text" ng-show="n.templateUrl">
+        <ng-include src="n.templateUrl"></ng-include>
+      </div>
+      <div class="role-detail-node-text" ng-hide="n.templateUrl" ng-bind-html="n.text"></div>
+      <div class="role-detail-more">See more about the <a ng-href="#/project-detail/{{p.title}}">{{p.title}}</a> project.</div>
+    </div>
+  </div>
+</div>
+
