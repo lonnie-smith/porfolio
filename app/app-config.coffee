@@ -11,40 +11,24 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
     templateUrl: 'portfolio/portfolio.html',
     controller: 'PortfolioCtrl'
     controllerAs: 'ctrl'
-    resolve: {
-      projectStore: projectStoreRouteResolver
-      roleStore: roleStoreRouteResolver
-    }
   }
 
   $routeProvider.when '/portfolio', {
     templateUrl: 'portfolio/portfolio.html',
     controller: 'PortfolioCtrl'
     controllerAs: 'ctrl'
-    resolve: {
-      projectStore: projectStoreRouteResolver
-      roleStore: roleStoreRouteResolver
-    }
   }
 
   $routeProvider.when '/project-detail/:projectId/:nodeTitle?', {
     templateUrl: 'project-detail/project-detail.html',
     controller: 'ProjectDetailCtrl'
     controllerAs: 'ctrl'
-    resolve: {
-      projectStore: projectStoreRouteResolver
-      roleStore: roleStoreRouteResolver
-    }
   }
 
   $routeProvider.when '/role-detail/:roleId/:projectTitle?', {
     templateUrl: 'role-detail/role-detail.html',
     controller: 'RoleDetailCtrl'
     controllerAs: 'ctrl'
-    resolve: {
-      projectStore: projectStoreRouteResolver
-      roleStore: roleStoreRouteResolver
-    }
   }
 
   $routeProvider.when '/resume', {
@@ -63,11 +47,3 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
 
 ]
 
-# Route resolve promises
-projectStoreRouteResolver = (projectStore) ->
-  return projectStore.load()
-projectStoreRouteResolver.$inject = ['projectStore']
-
-roleStoreRouteResolver = (roleStore) ->
-  return roleStore.load()
-roleStoreRouteResolver.$inject = ['roleStore']
