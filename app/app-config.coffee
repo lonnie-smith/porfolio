@@ -47,3 +47,9 @@ angular.module('app').config ['$routeProvider', ($routeProvider) ->
 
 ]
 
+angular.module('app').run ['$window', '$rootScope', '$location', ($window, $rootScope, $location) ->
+  if $window.ga?
+    $window.ga('create', 'UA-86339108-1', 'auto')
+    $rootScope.$on '$locationChangeSuccess', () ->
+      $window.ga('send', 'pageView', $location.path())
+]
