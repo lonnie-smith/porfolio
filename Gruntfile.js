@@ -85,6 +85,7 @@ module.exports = function(grunt) {
           'build/assets/compiled/portfolio.min.js': [
             'bower_components/angular/angular.js',
             'bower_components/angular-route/angular-route.js',
+            'bower_components/angular-sanitize/angular-sanitize.js',
             'app/_compiled/app-module.js',
             'app/_compiled/app-config.js',
             'app/_compiled/**/*.js',
@@ -116,10 +117,14 @@ module.exports = function(grunt) {
         },
         files: {
           'build/index.html': [
-            './app/layout/**/*.html',
-            './app/meetings/**/*.html',
-            './app/recos/**/*.html',
-            './app/services/**/*.html'
+            './app/content-html/*.html',
+            './app/front-page/*.html',
+            './app/layout/*.html',
+            './app/menu/*.html',
+            './app/portfolio/*.html',
+            './app/project-detail/*.html',
+            './app/resume/*.html',
+            './app/role-detail/*.html',
           ]
         }
       }
