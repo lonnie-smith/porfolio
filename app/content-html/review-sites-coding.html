@@ -1,4 +1,4 @@
-<p>The initial application required site assemblers to enter configuration data into spreadsheets. These spreadsheets (in CSV format) were served alongside the app, which had to parse them at run time. I couldn’t find an off-the-shelf in-browser CSV parser, so I wrote a <strong>state machine parser</strong> as an Angular service.</p>
+<p>The first version of the app read configuration data from CSV spreadsheets. The app downloads these CSV files and parses them at run time. I couldn’t find an off-the-shelf in-browser CSV parser, so I wrote a <strong>state machine parser</strong> as an Angular service.</p>
 <div class="illustrations">
   <figure>
     <a href="https://gist.github.com/lonnie-smith/f13e5694478281410612fe1464d41a31" target="_blank">
@@ -8,7 +8,7 @@
   </figure>
 </div>
 
-<p>The <a href="img/review-package-help.png" target="_blank">help feature</a> is implemented in a very simple way. It needed to be easy for package configurers to add, remove, or change help text without touching application code. So they type the help information they want into a 3-column spreadsheet. The Angular app loads the help data, and then templates check for the presence of help content on every field and generate a help dialog if one is needed.</p>
+<p>The <a href="img/review-package-help.png" target="_blank">help feature</a> is implemented in a very simple way. It needed to be easy for package configurers to add, remove, or change help text without touching application code. So they type the help information they want into a 3-column spreadsheet. The Angular app loads the help spreadsheet, and then the app’s templates check for the presence of help content on every field and generate a help dialog if one is needed.</p>
 
 <div class="illustrations">
   <figure>
@@ -35,9 +35,9 @@
 
 <p>When it became apparent that we were likely to be using the review site stopgap for the long term, I built a GUI for configuring packages so that package creators wouldn’t have to laboriously hand-craft spreadsheets. Here’s a bit of the code for that package builder app.</p>
 <ul>
-  <li>The <em>right</em> way to write this application would be to store package configuration data in a database. That wasn’t an option, so instead I created an object model that could be serialized to JSON strings and stored in the browser’s memory (<code>indexedDB</code>). This provided a feasible way to persist data across multiple work sessions as a package creator assembled the review site.</li>
+  <li>It would have been nice to hook this app up to a database-backed web service, but that wasn’t an option. So instead I created an object model that could be serialized to JSON strings and stored in the browser’s memory (<code>indexedDB</code>). This provided a feasible way to persist data across multiple work sessions as a package creator assembled the review site.</li>
   <li>I wrote an abstract <code>Serializeable</code> class that knows how to convert in-memory objects to and from JSON strings. I wrapped this up as an Angular factory so that it could be easily accessed throughout the application and so that it could be isolated for unit testing.</li>
-  <li>Most of the configuration objects used by the package builder app extend the <code>Serializeable</code> class with whatever custom properties or methods they need. There’s a couple of examples below: <code>ItemFilter</code>, which expresses filtering rules, and <code>ItemCollection</code>, which uses <code>ItemFilter</code> rules (and other configuration options) to define a filtered batch of questions that appear in the package.</li>
+  <li>Most of the configuration objects used by the package builder app extend the <code>Serializeable</code> class. There’s a couple of examples below: <code>ItemFilter</code>, which expresses filtering rules, and <code>ItemCollection</code>, which uses <code>ItemFilter</code> to define a batch of questions that appear in the package.</li>
 </ul>
 
 <div class="illustrations">

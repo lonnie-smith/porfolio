@@ -13,10 +13,11 @@
   </figure>
 </div>
 
-<p>First, we needed a succint way for passage authors to mark the beginning and end of a Lookback section. These sections can overlap and often span chunks of passage markup awkwardly (for example, a section could begin in the middle of one <code>&lt;p&gt;</code> element and end in the middle of another). Adding markup for lookback sections in and among the normal layout markup would be pretty cumbersome, so we just asked page authors to place a special element at the beginning, and another at the end, of lookback sections. <a href="https://gist.github.com/lonnie-smith/c9f1640ac574cf1a5512f649b560d9f7" target="_blank">Code sample 1</a> shows a snippet of a passage with <code>&lt;focus-start&gt;</code> and <code>&lt;focus-end&gt;</code> tags added. <a href="https://gist.github.com/lonnie-smith/d5fa99f706a028ca1798425689ebafff" target="_blank">Code sample 2</a> shows the the function that litters the otherwise-readable page with the markup needed to highlight the relevant section.</p>
-
-<p>Next, different passages use different navigation controls. For example, some passages use pages, while others scroll or are navigated by means of menus. Each navigation module therefore needs to handle moving to the lookback section in a different way. Each navigation control implements its own event handler, so each control can respond independently of the others. <a href="https://gist.github.com/lonnie-smith/ece50e1a95a71ba56124e23ee59babb7" target="_blank">Code sample 3</a> shows the event handler used by the paging module.
-</p>
+<p>The first challenge was creating a succinct way for passage authors to mark the beginning and end of a Lookback section. These sections often awkwardly span different branches of the DOM tree—for example, a section could begin in the middle of one <code>&lt;p&gt;</code> element and end in the middle of another. So we needed wrap every DOM text node that was part of a lookback section. That would be a horrible thing to have to do by hand, so instead we do it dynamically:</p>
+<ul>
+  <li>We asked page authors to place a special element at the beginning, and another at the end, of lookback sections. <a href="https://gist.github.com/lonnie-smith/c9f1640ac574cf1a5512f649b560d9f7" target="_blank">Code sample 1</a> shows a snippet of a passage with <code>&lt;focus-start&gt;</code> and <code>&lt;focus-end&gt;</code> tags added.</li>
+  <li><a href="https://gist.github.com/lonnie-smith/d5fa99f706a028ca1798425689ebafff" target="_blank">Code sample 2</a> shows the the function that locates all the relevant text nodes and decorates them with the markup needed to highlight the relevant section.</li>
+</ul>
 
 <div class="illustrations">
   <figure>
@@ -32,7 +33,12 @@
       <figcaption>Sample 2: adding cluttery markup at run time</figcaption>
     </a>
   </figure>
+</div>
 
+<p>Another challenge was posed by the fact that different passages use different navigation controls. For example, some passages use pages, while others scroll or are navigated by means of menus. Each navigation module therefore needs to handle moving to the lookback section in a different way. The overall software design uses loosely coupled components which can function independently of the others. Event messaging is a nice way to make this work: components listen for lookback events and respond in whatever way they need to. <a href="https://gist.github.com/lonnie-smith/ece50e1a95a71ba56124e23ee59babb7" target="_blank">Code sample 3</a> shows the event handler used by the paging module.
+</p>
+
+<div class="illustrations">
   <figure>
     <a href="https://gist.github.com/lonnie-smith/ece50e1a95a71ba56124e23ee59babb7" target="_blank">
       <img src="img/ereader-3-thumb.png" />

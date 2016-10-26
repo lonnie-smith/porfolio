@@ -5,7 +5,7 @@ angular.module('app').factory 'portfolioData', [() ->
       role: "Programmer"
       title: "Front-end Web Developer"
       workKind: "front-end development"
-      shortBlurb: "I’m a front-end web developer with a focus on building feature-rich single page apps. Special areas of interest are <strong>Angular</strong> and <strong>Polymer</strong>, but I also have a range of experience working on everything from Java to ."
+      shortBlurb: "I’m a front-end web developer with a focus on building feature-rich single page apps. My main areas of practice are with <strong>Angular</strong> and <strong>Polymer</strong>, but at one time or another I’ve done small projects with Rails, Java, Python, and C."
       text: """
         <p>My bread-and-butter is single-page web applications; special areas of interest are <strong>Angular</strong> and <strong>Polymer</strong>, with a sideline in automated testing. I use <strong>Coffeescript</strong> a lot, because I love how  expressive and succinct it is. I use <strong>Sass</strong> quite a bit too, mostly in larger projects where variables, mixins, and functions are more useful. <strong>Git</strong>, <strong>Bower</strong>, and <strong>Grunt</strong> are parts of my toolchain I use daily.</p>
         <p>I’m no unicorn, but I am a well-rounded generalist—</p>
@@ -15,17 +15,19 @@ angular.module('app').factory 'portfolioData', [() ->
           <li>I can provision and secure a Linux virtual server, configure NGINX or Apache, set up cron jobs and open-source databases, and do other general <strong>sysadmin work</strong>.</li>
           <li>In my current job, I spend a lot of my time coordinating the work of developers at different companies who are building software that needs to interoperate. I have hard-won experience <strong>writing technical specs</strong>, <strong>designing APIs</strong>, <strong>defining scopes of work</strong>, <strong>troubleshooting</strong> Other People’s Code, and developing <strong>QA testing</strong> protocols.</li>
         </ul>
+        <p>Here are some projects where I wrote some or all of the front-end code.</p>
       """
     }
     {
       role: "Designer"
       title: "Designer"
       workKind: "design"
-      shortBlurb: "I’m a design-savvy developer. For most of my projects, I collaborate with clients and colleagues to gather design requirements, draft a slate of potential interface/interaction designs, and create wireframes, mockups, or functional prototypes as the occasion requires."
+      shortBlurb: "My design work centers on requirements analysis, graphic layout, and interaction design."
       text: """
+        <p>I’m a big believer that a product is only as good as its design. A lot of the projects I’ve worked on haven’t had a designer attached as a separate role, so I collaborate with clients and colleagues to gather design requirements, draft a slate of potential interface/interaction designs, and create wireframes, mockups, or functional prototypes as the occasion requires.</p>
         <p>My strengths as a designer come from my facility with code: I can move quickly from design sketches to working prototypes. When I need to gather feedback on potential design alternatives, I often prefer to code up live demos rather than draw pictures.</p>
-        <p>A lot of my design experience comes from projects which needed a lot of painstaking consensus-building. I’ve gotten good at breaking down design decisions for non-technical stakeholders, walking them through alternatives, and presenting a case for I think will work best for their needs.</p>
-        <p>I like working on typography and layout, but I’m most proud of projects I’ve done in collaboration with a talented visual designer. User testing is pretty important to many of the projects I work on, but we typically don’t conduct user testing in-house, so my experience there has mostly been limited to working testing specialists and to expose and remedy usability problems at the prototype stage.</p>
+        <p>A lot of my products require painstaking consensus-building, so I’ve gotten good at breaking down design decisions for non-technical stakeholders, walking them through alternatives, and presenting a case for the approaches I think will work best for their needs.</p>
+        <p>I like working on typography and layout, but I’m most proud of projects I’ve done in collaboration with a talented visual designer. User testing is pretty important to many of the projects I work on. We typically work with third parties to conduct usability studies, so my experience there has mostly been limited to collaborating with our testing people to expose and resolve usability problems at the prototype stage.</p>
       """
     }
     {
@@ -54,12 +56,13 @@ angular.module('app').factory 'portfolioData', [() ->
       thumbnail: "img/hal-thumb.png"
       technologies: "Polymer"
       shortBlurb: """
-        HAL (HTML Assessment Library) is a specialized web application framework I built. It facilitates rapid development of assessment content while helping us provide a consistent, highly-polished look-and-feel across a range of products.
+        A web app framework that facilitates rapid development of interactive assessment content.
       """
       intro: """
-        <p>My team has been working on computer-based assessments since 2010. As our work grew and diversified, we found ourselves struggling to create a visually and behaviorally consistent user interface across dozens of different products, and we often wound up re-inventing and re-implementing similar interactions.</p>
-        <p>I designed and built a series of reusable web components that includes both well-tested UI widgets for the most frequently occurring user interactions and a set of modules that handle data processing and event logging in the background.</p>
-        <p>Together, these components form the “HTML Assessment Library” (HAL), a custom application development framework which has <strong>cut development time by about 80%</strong>, created a unique and consistent look-and-feel across products that use the framework, and yet still has enough flexibility and configurability to allow us to create new, ad-hoc designs when we need to.</p>
+        <p>My team has been working on computer-based educational assessments since 2010. As our work grew and diversified, we found ourselves struggling to create a visually and behaviorally consistent user interface across dozens of different products, and we often wound up re-inventing and re-implementing similar interactions.</p>
+        <p>I designed and built a series of reusable web components that includes both well-tested UI widgets for the most frequently occurring user interactions and a set of modules that handle data processing and event logging in the background. Together, these components form the “HTML Assessment Library” (HAL), a custom application development framework which has cut product development time from 6–8 weeks to more like 6–8 days.</p>
+        <p><em>My role:</em> I worked with a large group of stakeholders to develop initial designs for many of the components that later became part of the framework. I designed the overall software architecture for the framework, documented each component’s API, and wrote the code for most of the components. I provide technical support to other developers using the framework, and use it myself to build assessment modules.</p>
+        <p>Here are some projects where I made major contributions to the design.</p>
       """
       nodes: [
         {
@@ -88,14 +91,14 @@ angular.module('app').factory 'portfolioData', [() ->
       thumbnail: "img/latchkey-thumb.png"
       technologies: "Angular"
       shortBlurb: """
-        I designed and built this site to give our book club a better way to sort and filter our ever-growing list of cultural recommendations as well as keeping track of montly meetings. This is an ongoing exericse in creating a dynamic, data-backed site with the absolute bare minimum in terms of back-end.
+        An exercise in creating a dynamic, data-backed site with the absolute bare minimum in terms of back-end. It looks pretty nice, too.
       """
       intro: """
-      <p>Our book club swaps “cultural recommendations” every month—books, movies, restaurants, and other stuff we like. This is a great way to discover new things—but who can remember what was recommended yesterday, let alone a couple of months later when you’re looking for a new TV show to watch.</p>
+      <p>Our book club swaps “cultural recommendations” every month—books, movies, restaurants, and other stuff we like.</p>
 
-      <p>So I designed this website to provide sortable lists of cultural recommendations, and to provide information about books for upcoming meetings. The site is updated by editing a couple of Google spreadsheets, which saves the hassle of authentication or building a tedious CRUD interface.</p>
+      <p>I designed this website to provide sortable lists of cultural recommendations and to provide information about books for upcoming meetings. The site is updated by editing a couple of Google spreadsheets, which saves the hassle of authentication or building a tedious CRUD interface.</p>
 
-      <p>See the live site at <a href="http://latchkeybook.club" target="_blank">latchkeybook.club</a>, or check out the code on <a href="https://github.com/lonnie-smith/latchkey-book-club" target="_blank">GitHub</a>.
+      <p><em>My role:</em> This was a side project I did on my own. See the live site at <a href="http://latchkeybook.club" target="_blank">www.latchkeybook.club</a>, or check out the code on <a href="https://github.com/lonnie-smith/latchkey-book-club" target="_blank">GitHub</a>.
       """
       nodes: [
         {
@@ -119,11 +122,13 @@ angular.module('app').factory 'portfolioData', [() ->
       date: "2014"
       thumbnail: "img/ereader-thumb.png"
       technologies: "jQuery, RequireJS"
-      shortBlurb: "I worked on the early phases of product design, then wrote production code for this specialized ebook-like reading application that runs inside our browser-based assessment platform."
+      shortBlurb: "A specialized, ebook-like reading app that runs in the browser."
       intro: """
         <p>Our task was to create an ebook-style reading app inside a larger web application. Students would use the app to read a “passage”—a text a few pages long—before answering reading comprehension questions.</p>
 
-        <p>I worked on the eReader’s initial design in 2014, and wrote production code in 2015. I’m the lead developer for the eReader, so I’m responsible for maintenance and meeting new feature requests as part of this product’s ongoing development.</p>
+        <p>The eReader’s feature set includes a variety of touch- and mouse-based controls for navigating through texts, ability to make free-hand annotations on the text using a stylus, three user-selectable color themes, and smart integration with test questions.</p>
+
+        <p><em>My role:</em>I worked on the eReader’s initial design and wrote production code. I also handle maintenance and implementing new feature requests as part of this product’s annual release cycle.</p>
       """
       nodes: [
         {
@@ -147,12 +152,13 @@ angular.module('app').factory 'portfolioData', [() ->
       date: "2013"
       thumbnail: "img/erp-thumb.png"
       technologies: "Angular"
-      shortBlurb: "We needed a way to present our client with test questions and their associated metadata for review. Earlier attempts at building a database-backed web service foundered on the rocks of legacy systems integration, so I built a lightweight solution that generates static websites from user-supplied configuration: no database required."
+      shortBlurb: "A static, single-page site generator that does the job of an enterprise-grade custom CMS. "
+
       intro: """
-        <p>An important part of working with our client is circulating “review packages”—binders of printed test questions—to expert committees for review. For computer-based questions, the intended equivalent of these packages was a massive, enterprise-grade question tracking system.</p>
-        <p>With deadlines looming, and the Enterprise Solution still in the planning phase, I had about three weeks to put something together that would get the job done.</p>
-        <p>The solution I came up with was a static site generator: package authors create static config files which are served alongside a client-side Angular app that displays the package content and allows reviewers to sort, filter, and page through the package.</p>
-        <p>This is a small subset of the features intended for the Enterprise Solution, but it was on time and worked well enough that it became a permanent solution instead of a temporary stopgap.</p>
+        <p>We needed a specialized online content review solution for our client. Earlier attempts at building a big, database-backed CMS were struggling to get past numerous legacy systems integration issues. With contract deadlines looming, I had about a month to put together a stopgap solution.</p>
+        <p>So I built a lightweight solution that generates static “review package” websites from user-supplied configuration—no back-end required. Package authors create config files which are served alongside a client-side Angular app that displays the package content and allows reviewers to sort, filter, and page through content.
+        </p>
+        <p><em>My role:</em> I developed the site design and wrote the production code, and added some new features at our client’s request. As sometimes happens, this stopgap solution has become more of a long-term solution, so I came back a few months later and wrote a second version that makes package creation much easier.</p>
       """
       nodes: [
         {
